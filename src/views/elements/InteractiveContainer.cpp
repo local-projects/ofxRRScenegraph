@@ -6,10 +6,10 @@ InteractiveContainer::InteractiveContainer() {
 
 void InteractiveContainer::_draw() {
   if (_isFilled == true) {
-    ofRect(0, 0, width, height);
+    ofDrawRectangle(0, 0, width, height);
   }
 }
 
 void InteractiveContainer::_drawForPicking() {
-  ofRect(0, 0, width, height);
+  ofDrawRectangle(0, 0, width, height);
 }

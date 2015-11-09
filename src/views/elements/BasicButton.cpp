@@ -32,7 +32,7 @@ void BasicButton::onLastTouchUp(MultiTouchEvent &_event) {
 
 void BasicButton::_draw() {
   if (normal == NULL) {
-    ofRect(0, 0, width, height);
+    ofDrawRectangle(0, 0, width, height);
   }
 
   if (currentImage != NULL) {

@@ -51,7 +51,7 @@ void ShapeRoundedRect::setRadius(float r) {
   float y2 = y + h;
 
   if (r > w || r > h) {
-    ofRect(x, y, z, w, h);
+    ofDrawRectangle(x, y, z, w, h);
     return;
   }
   path.setCurveResolution(5);

@@ -73,7 +73,7 @@ public:
   // Attention on overload, don't forget to call BasicInteractiveObject::update() in update()
   virtual void update();
   virtual void _drawForPicking() {
-    ofRect(0, 0, width, height);
+    ofDrawRectangle(0, 0, width, height);
   };
   virtual void drawForPicking();
 

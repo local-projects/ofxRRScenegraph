@@ -14,13 +14,13 @@ void ShapeRect::_draw() {
   ofSetRectMode(mode);
   ofFill();
 
-  ofRect(0, 0, width, height);
+  ofDrawRectangle(0, 0, width, height);
 
   ofSetLineWidth(_strokeWidth);
   ofNoFill();
   ofSetColor(_strokeColor, getCombinedAlpha());
 
-  ofRect(0, 0, width, height);
+  ofDrawRectangle(0, 0, width, height);
 
   ofPopStyle();
 }

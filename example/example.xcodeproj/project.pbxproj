@@ -616,7 +616,7 @@
 		255AED871BF04FB7005D7553 /* ofxPCSurface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxPCSurface.h; sourceTree = "<group>"; };
 		255AEDA11BF050B6005D7553 /* ofxTuioClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTuioClient.cpp; sourceTree = "<group>"; };
 		255AEDA21BF050B6005D7553 /* ofxTuioClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxTuioClient.h; sourceTree = "<group>"; };
-		255AEDA31BF050B6005D7553 /* ofxTuioServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTuioServer.cpp; sourceTree = "<group>"; };
+		255AEDA31BF050B6005D7553 /* ofxTuioServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = ofxTuioServer.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		255AEDA41BF050B6005D7553 /* ofxTuioServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxTuioServer.h; sourceTree = "<group>"; };
 		255AEDA61BF050B6005D7553 /* Doxyfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
 		255AEDA71BF050B6005D7553 /* TuioClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TuioClient.cpp; sourceTree = "<group>"; };

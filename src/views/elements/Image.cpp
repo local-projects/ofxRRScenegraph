@@ -59,7 +59,7 @@ void Image::_draw() {
 
 void Image::load(string _filename) {
   img->clear();
-  img->loadImage(_filename);
+  img->load(_filename);
   setSize(img->getWidth(), img->getHeight());
   changed = true;
   loaded = true;
@@ -218,7 +218,7 @@ void Image::scaleFitPad(int _width, int _height, ofColor _color, bool _vcenter, 
 
   ofPushStyle();
   ofSetColor(_color);
-  ofRect(0, 0, _width, _height);
+  ofDrawRectangle(0, 0, _width, _height);
 
   ofSetColor(255, 255, 255);
   int vpos = 0;
