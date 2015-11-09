@@ -5,4 +5,3 @@
 #include "ScaleRestrictor.h"
 #include "VerticalRestrictor.h"
 #include "AreaRestrictor.h"
-

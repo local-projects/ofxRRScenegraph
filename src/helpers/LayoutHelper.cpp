@@ -7,7 +7,7 @@
  */
 
 ofVec2f LayoutHelper::getGridPosition(int maxColoumns, int index) {
-	int c = index%maxColoumns;
-	int r = index/maxColoumns;
-	return ofVec2f(c,r);
+  int c = index % maxColoumns;
+  int r = index / maxColoumns;
+  return ofVec2f(c, r);
 }

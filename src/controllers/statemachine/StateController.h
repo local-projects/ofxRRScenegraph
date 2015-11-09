@@ -2,16 +2,18 @@
 #include "BasicController.h"
 #include "State.h"
 class State;
-class StateController: public BasicController {
-	
+class StateController : public BasicController {
+
 public:
-	StateController() {};
-	virtual ~StateController(){};
-	
-	int		getState()	{ return currentState; };
-	void	setState( int newState );
+  StateController(){};
+  virtual ~StateController(){};
+
+  int getState() {
+    return currentState;
+  };
+  void setState(int newState);
 
 protected:
-	int				currentState;
-	map<int,State*>	states;
+  int currentState;
+  map<int, State *> states;
 };
