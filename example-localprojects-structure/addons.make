@@ -1,0 +1,9 @@
+ofxOsc
+ofxThreadedImageLoader
+ofxXmlSettings
+../../../ExternalAddons/ofxFastFboReader
+../../../ExternalAddons/ofxPango
+../../../ExternalAddons/ofxRRSceneGraph
+../../../ExternalAddons/ofxTimer
+../../../ExternalAddons/ofxTuioWrapper
+../../../ExternalAddons/ofxTweener
