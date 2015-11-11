@@ -1,0 +1,7 @@
+<map id="ScrollableContainer::onManualScrollStop" name="ScrollableContainer::onManualScrollStop">
+<area shape="rect" id="node2" href="$class_scrollable_container.html#a6c6f365c6438bc45a25e7297b14c4e74" title="ScrollableContainer\l::_handleRelease" alt="" coords="201,68,339,107"/>
+<area shape="rect" id="node3" href="$class_scrollable_container.html#adf3941355eeccce5dd15dcdd9ffab32c" title="ScrollableContainer\l::scrollToElement" alt="" coords="395,5,533,44"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a26538944da4ab3dd0a89dcd49ee25a0d" title="BasicScreenObject::\lsetSpeed" alt="" coords="393,68,535,107"/>
+<area shape="rect" id="node6" href="$class_basic_interactive_object.html#a8d3f22c00a16f07853fb56971e767aaf" title="BasicInteractiveObject\l::getDragSpeed" alt="" coords="387,131,541,169"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#ac830dd8f068422cd0271fee7ead8fa99" title="BasicScreenObject::\lmoveTo" alt="" coords="589,5,731,44"/>
+</map>

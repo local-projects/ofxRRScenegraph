@@ -1,0 +1,17 @@
+<map id="ScrollableContainer::removeElement" name="ScrollableContainer::removeElement">
+<area shape="rect" id="node2" href="$class_scrollable_container.html#a308d1ef96f7254a5b9af9c0932da2c6c" title="ScrollableContainer\l::onElementRemoved" alt="" coords="191,441,341,480"/>
+<area shape="rect" id="node13" href="$class_basic_screen_object.html#aa01de5cdde6c778a074cbd054943f101" title="BasicScreenObject::\lfadeTo" alt="" coords="1042,483,1184,521"/>
+<area shape="rect" id="node3" href="$class_scrollable_container.html#a30e101774b3c631e1cab6bfd77457bf4" title="ScrollableContainer\l::onElementChangedSize" alt="" coords="389,323,561,361"/>
+<area shape="rect" id="node4" href="$class_scrollable_container.html#aa735d92b9b0cef23e9df8209f360fb15" title="ScrollableContainer\l::_updateLayout" alt="" coords="611,285,749,324"/>
+<area shape="rect" id="node14" href="$class_basic_screen_object.html#a0a796b03b5dad282160d9d4fa30d483b" title="BasicScreenObject::\lremoveChild" alt="" coords="404,485,546,524"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#aa3a3003ed84bc2884f0d7733d5781307" title="BasicScreenObject::\lsetPosition" alt="" coords="826,5,968,44"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#ac830dd8f068422cd0271fee7ead8fa99" title="BasicScreenObject::\lmoveTo" alt="" coords="826,68,968,107"/>
+<area shape="rect" id="node7" href="$class_basic_screen_object.html#a9121f99c88adcbcf39da77ce57b55c9f" title="BasicScreenObject::\lgetWidth" alt="" coords="826,131,968,169"/>
+<area shape="rect" id="node8" href="$class_basic_screen_object.html#a1c57b6c8779b7179561cce719e421c07" title="BasicScreenObject::\lgetHeight" alt="" coords="826,193,968,232"/>
+<area shape="rect" id="node9" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="826,256,968,295"/>
+<area shape="rect" id="node10" href="$class_basic_screen_object.html#a9d79776c348566b979cf20777fa627a4" title="BasicScreenObject::\lisVisible" alt="" coords="1042,385,1184,424"/>
+<area shape="rect" id="node11" href="$class_area_restrictor.html#a461d0b5622c097bf51987677e4e86f0b" title="AreaRestrictor::setRestriction\lValue" alt="" coords="799,371,994,409"/>
+<area shape="rect" id="node12" href="$class_scrollable_container.html#aa8c768c85abf467727fe6d78487168e2" title="ScrollableContainer\l::flashScrollbar" alt="" coords="828,433,965,472"/>
+<area shape="rect" id="node15" href="$class_basic_screen_object.html#a47c2f9a3635f890fa521122ab41eb213" title="BasicScreenObject::\lclearParent" alt="" coords="609,493,751,532"/>
+<area shape="rect" id="node16" href="$class_basic_screen_object.html#a7a69ef35c90bb46af179eacb0a105407" title="BasicScreenObject::\lsetChildrenParentTreeAdded\lToRenderer" alt="" coords="800,496,993,548"/>
+</map>

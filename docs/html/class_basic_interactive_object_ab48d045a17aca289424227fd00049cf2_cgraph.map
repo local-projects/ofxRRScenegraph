@@ -1,0 +1,18 @@
+<map id="BasicInteractiveObject::drawForPicking" name="BasicInteractiveObject::drawForPicking">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a9d79776c348566b979cf20777fa627a4" title="BasicScreenObject::\lisVisible" alt="" coords="218,116,360,155"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a1e6f758c8a591b3f5fdfcc4c80a4c57e" title="BasicScreenObject::\lisParentTreeVisible" alt="" coords="218,179,360,217"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#a96d3299e9ec9c635e5ab97bafdbb7a2f" title="BasicScreenObject::\lsetupMask" alt="" coords="218,241,360,280"/>
+<area shape="rect" id="node11" href="$class_basic_screen_object.html#a74b5f87064665fc69af24af41d8fc5bf" title="BasicScreenObject::\lrestoreMask" alt="" coords="637,305,779,344"/>
+<area shape="rect" id="node15" href="$class_basic_interactive_object.html#a73445b1492d1d445cf6e59807e53b63c" title="BasicInteractiveObject\l::pickingNameToColor" alt="" coords="212,419,366,457"/>
+<area shape="rect" id="node16" href="$class_basic_interactive_object.html#abb277f2007f9537f3c5ac7aff5ebfd0a" title="BasicInteractiveObject\l::_drawForPicking" alt="" coords="212,481,366,520"/>
+<area shape="rect" id="node17" href="$class_basic_screen_object.html#a8772721611c45ef09e5b092a30fda59d" title="BasicScreenObject::\ldrawChildrenForPicking" alt="" coords="207,544,370,583"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#afb336b62c8f08125136ca7de56eff0e5" title="BasicScreenObject::\ldisableDepthTest" alt="" coords="433,67,575,105"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#a7e948626e141f60c5a55dec26b0951f1" title="BasicScreenObject::draw" alt="" coords="418,129,589,155"/>
+<area shape="rect" id="node12" href="$class_basic_screen_object.html#af69b50bb6ac9943b37f7ce64c0c853ac" title="BasicScreenObject::\llocalToGlobal" alt="" coords="433,179,575,217"/>
+<area shape="rect" id="node13" href="$class_basic_screen_object.html#a1c57b6c8779b7179561cce719e421c07" title="BasicScreenObject::\lgetHeight" alt="" coords="433,241,575,280"/>
+<area shape="rect" id="node14" href="$class_basic_screen_object.html#a9121f99c88adcbcf39da77ce57b55c9f" title="BasicScreenObject::\lgetWidth" alt="" coords="433,304,575,343"/>
+<area shape="rect" id="node7" href="$class_basic_screen_object.html#a1a418b01a9bb0b88a1babd818298c0c6" title="BasicScreenObject::\lgetCombinedAlpha" alt="" coords="637,29,779,68"/>
+<area shape="rect" id="node8" href="$class_basic_screen_object.html#a72adf32ac30c4363f8e9d97e1311e992" title="BasicScreenObject::\l_draw" alt="" coords="637,92,779,131"/>
+<area shape="rect" id="node9" href="$class_basic_screen_object.html#ac5530fca3a12d56d20363b2392f128e0" title="BasicScreenObject::\ldrawChildren" alt="" coords="637,155,779,193"/>
+<area shape="rect" id="node10" href="$class_basic_screen_object.html#a2faec0005fa0a8488a85059d0713e885" title="BasicScreenObject::\l_drawAfterChildren" alt="" coords="637,217,779,256"/>
+</map>

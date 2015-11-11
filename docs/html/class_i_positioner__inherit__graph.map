@@ -1,0 +1,8 @@
+<map id="IPositioner" name="IPositioner">
+<area shape="rect" id="node2" href="$class_arc_restrictor.html" title="{ArcRestrictor\n||+ ArcRestrictor()\l+ ArcRestrictor()\l+ setRestrictionValue()\l+ restrict()\l}" alt="" coords="5,127,161,240"/>
+<area shape="rect" id="node3" href="$class_area_restrictor.html" title="{AreaRestrictor\n||+ AreaRestrictor()\l+ AreaRestrictor()\l+ setRestrictionValue()\l+ restrict()\l}" alt="" coords="185,127,341,240"/>
+<area shape="rect" id="node4" href="$class_horizontal_restrictor.html" title="{HorizontalRestrictor\n||+ HorizontalRestrictor()\l+ HorizontalRestrictor()\l+ setRestrictionValue()\l+ restrict()\l}" alt="" coords="365,127,524,240"/>
+<area shape="rect" id="node5" href="$class_rotation_restrictor.html" title="{RotationRestrictor\n||+ RotationRestrictor()\l+ RotationRestrictor()\l+ setRestrictionValue()\l+ restrict()\l}" alt="" coords="548,127,704,240"/>
+<area shape="rect" id="node6" href="$class_scale_restrictor.html" title="{ScaleRestrictor\n||+ ScaleRestrictor()\l+ ScaleRestrictor()\l+ setRestrictionValue()\l+ restrict()\l}" alt="" coords="728,127,884,240"/>
+<area shape="rect" id="node7" href="$class_vertical_restrictor.html" title="{VerticalRestrictor\n||+ VerticalRestrictor()\l+ VerticalRestrictor()\l+ setRestrictionValue()\l+ restrict()\l}" alt="" coords="908,127,1064,240"/>
+</map>

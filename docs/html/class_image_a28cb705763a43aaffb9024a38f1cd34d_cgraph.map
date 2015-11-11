@@ -1,0 +1,8 @@
+<map id="Image::clone" name="Image::clone">
+<area shape="rect" id="node2" href="$class_image.html#a46b523f37d9692772312984a480f02f6" title="Image::setSize" alt="" coords="178,40,288,65"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a9121f99c88adcbcf39da77ce57b55c9f" title="BasicScreenObject::\lgetWidth" alt="" coords="162,89,304,128"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#a1c57b6c8779b7179561cce719e421c07" title="BasicScreenObject::\lgetHeight" alt="" coords="162,152,304,191"/>
+<area shape="rect" id="node7" href="$class_image.html#af03c94debf29290791aeb1d2f0aa6648" title="Image::getImagePointer" alt="" coords="151,215,315,240"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="390,5,532,44"/>
+<area shape="rect" id="node4" href="$class_image.html#adc3f40627ba638546fd0250a91401da8" title="Image::updateRealImageSize" alt="" coords="363,68,560,93"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="BasicInteractiveObject::addMultiTouch" name="BasicInteractiveObject::addMultiTouch">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a15821c7f87b98b19f7eee2380c1cc9ae" title="BasicScreenObject::\lglobalToLocal" alt="" coords="213,21,355,60"/>
+<area shape="rect" id="node4" href="$class_basic_interactive_object.html#acaedb13a1e452917aa3101aac8aab6be" title="BasicInteractiveObject\l::resetMTStartValues" alt="" coords="207,115,361,153"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#ac4e01f82cef84005439f1ab1056e6cde" title="BasicScreenObject::\lgetParent" alt="" coords="422,5,564,44"/>
+<area shape="rect" id="node5" href="$class_basic_interactive_object.html#ac5d2b532d588cb658b5f5077cfe9fb9d" title="BasicInteractiveObject\l::getNumActiveTouches" alt="" coords="412,68,573,107"/>
+<area shape="rect" id="node6" href="$class_basic_interactive_object.html#a1dc5b26d30f2cb8e2de1fb148775e385" title="BasicInteractiveObject\l::getCurrentMtTransform" alt="" coords="409,131,576,169"/>
+<area shape="rect" id="node7" href="$class_basic_interactive_object.html#a23fa7eaa16d4bbec47f0356c15e8908c" title="BasicInteractiveObject\l::getCurrentMtTranslate" alt="" coords="412,193,574,232"/>
+</map>

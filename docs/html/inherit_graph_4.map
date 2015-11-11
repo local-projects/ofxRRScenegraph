@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_i_positioner.html" title="IPositioner" alt="" coords="5,129,90,155"/>
+<area shape="rect" id="node2" href="$class_arc_restrictor.html" title="ArcRestrictor" alt="" coords="158,5,256,31"/>
+<area shape="rect" id="node3" href="$class_area_restrictor.html" title="AreaRestrictor" alt="" coords="154,55,260,80"/>
+<area shape="rect" id="node4" href="$class_horizontal_restrictor.html" title="HorizontalRestrictor" alt="" coords="138,104,276,129"/>
+<area shape="rect" id="node5" href="$class_rotation_restrictor.html" title="RotationRestrictor" alt="" coords="143,153,271,179"/>
+<area shape="rect" id="node6" href="$class_scale_restrictor.html" title="ScaleRestrictor" alt="" coords="151,203,263,228"/>
+<area shape="rect" id="node7" href="$class_vertical_restrictor.html" title="VerticalRestrictor" alt="" coords="146,252,268,277"/>
+</map>

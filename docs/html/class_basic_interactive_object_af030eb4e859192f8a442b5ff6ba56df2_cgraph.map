@@ -1,0 +1,5 @@
+<map id="BasicInteractiveObject::setRoot" name="BasicInteractiveObject::setRoot">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#ad20c1064d40c2cb76e95d6685488a0e0" title="BasicScreenObject::\lgetName" alt="" coords="241,5,383,44"/>
+<area shape="rect" id="node3" href="$class_renderer.html#af8387541bcceb9988e047f9123e538f9" title="Renderer::getNextPickingName" alt="" coords="207,68,416,93"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#a1fe0d45ef97b3cb5e2da10513a550367" title="BasicScreenObject::\lsetRoot" alt="" coords="241,117,383,156"/>
+</map>

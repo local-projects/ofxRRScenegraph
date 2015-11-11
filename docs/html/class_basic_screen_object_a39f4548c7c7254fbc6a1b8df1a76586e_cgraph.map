@@ -1,0 +1,14 @@
+<map id="BasicScreenObject::_update" name="BasicScreenObject::_update">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a0fb374be7e0620a38f84372edd6c3c84" title="BasicScreenObject::\lfirstUpdate" alt="" coords="196,5,338,44"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#aa3a3003ed84bc2884f0d7733d5781307" title="BasicScreenObject::\lsetPosition" alt="" coords="196,68,338,107"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#afd27fb67dd45f7952c929ec40979ca5c" title="BasicScreenObject::\lsetColor" alt="" coords="196,131,338,169"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="196,193,338,232"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#a3bb42776a73b64ff7204eaf2f1ccfe5e" title="BasicScreenObject::\lsetOrientation" alt="" coords="577,301,719,340"/>
+<area shape="rect" id="node7" href="$class_basic_screen_object.html#ae24331b39b9371d06b16ed96bbe32be1" title="BasicScreenObject::\ldoRotate" alt="" coords="196,308,338,347"/>
+<area shape="rect" id="node9" href="$class_basic_screen_object.html#ae017e259bf066ed082d94b2e78020db6" title="BasicScreenObject::\ldoMove" alt="" coords="196,371,338,409"/>
+<area shape="rect" id="node11" href="$class_basic_screen_object.html#a36f1dd3212020b79dae4fea170277a10" title="BasicScreenObject::\ldoOrderChildrenByZ" alt="" coords="195,433,339,472"/>
+<area shape="rect" id="node12" href="$class_basic_screen_object.html#a62bb813f1132618ac36e02a0afc340f6" title="BasicScreenObject::\lupdate" alt="" coords="196,496,338,535"/>
+<area shape="rect" id="node13" href="$class_i_positioner.html#a594a49ddcfb27beb5c02c6e11779524e" title="IPositioner::restrict" alt="" coords="201,559,333,584"/>
+<area shape="rect" id="node8" href="$class_basic_screen_object.html#a8fbca01485d0e9aff9f6ce8ff0f997ff" title="BasicScreenObject::\laddRotation" alt="" coords="387,359,529,397"/>
+<area shape="rect" id="node10" href="$class_basic_screen_object.html#aad0e0777673a35f03fcaba98d6602767" title="BasicScreenObject::\laddSpeed" alt="" coords="387,421,529,460"/>
+</map>

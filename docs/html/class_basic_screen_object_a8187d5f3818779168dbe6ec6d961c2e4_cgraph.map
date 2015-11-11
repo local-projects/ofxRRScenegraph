@@ -1,0 +1,5 @@
+<map id="BasicScreenObject::setMaskObject" name="BasicScreenObject::setMaskObject">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#af2e30519d419e6ab07b66d1fea569490" title="BasicScreenObject::\lisMask" alt="" coords="195,5,338,44"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#afb336b62c8f08125136ca7de56eff0e5" title="BasicScreenObject::\ldisableDepthTest" alt="" coords="195,68,338,107"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#a02cfad3b9bdbff73aa6d7dc6c7cb760d" title="BasicScreenObject::\lhasMask" alt="" coords="195,131,338,169"/>
+</map>

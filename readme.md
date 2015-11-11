@@ -12,6 +12,8 @@ Kitschpatrol's fork adds openFrameworks 9.0 and 64-bit support. (64 bit support 
 
 ##Architecture
 
+<img src="class_diagram.png" />
+
 The most important Elements are:
  
 ### Renderer:

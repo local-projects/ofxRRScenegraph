@@ -1,0 +1,12 @@
+<map id="Renderer::setup" name="Renderer::setup">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="181,5,323,44"/>
+<area shape="rect" id="node3" href="$class_renderer.html#a883115d2fcc4ea0dc82a6893a5168359" title="Renderer::mousePressed" alt="" coords="385,415,558,440"/>
+<area shape="rect" id="node5" href="$class_renderer.html#aaf4388e175917d8124db0ad46372ef53" title="Renderer::mouseDragged" alt="" coords="384,35,559,60"/>
+<area shape="rect" id="node6" href="$class_renderer.html#ab56f718a0565c65b6b7ef26607880714" title="Renderer::mouseReleased" alt="" coords="381,136,562,161"/>
+<area shape="rect" id="node7" href="$class_renderer.html#a11af3feca2e33c0b371b8149cd2f287d" title="Renderer::tuioAdded" alt="" coords="180,307,324,332"/>
+<area shape="rect" id="node10" href="$class_renderer.html#a6cfaf432ac4db3f88d42feea5489b9ea" title="Renderer::tuioRemoved" alt="" coords="170,221,333,247"/>
+<area shape="rect" id="node11" href="$class_renderer.html#ab031abc813665496a6e3a590cfe56d5c" title="Renderer::tuioUpdated" alt="" coords="174,120,330,145"/>
+<area shape="rect" id="node4" href="$class_renderer.html#a159097c78ca8430e11d061c6a04c5e00" title="Renderer::queueTouchAction" alt="" coords="610,193,804,219"/>
+<area shape="rect" id="node8" href="$class_basic_screen_object.html#a9121f99c88adcbcf39da77ce57b55c9f" title="BasicScreenObject::\lgetWidth" alt="" coords="400,300,543,339"/>
+<area shape="rect" id="node9" href="$class_basic_screen_object.html#a1c57b6c8779b7179561cce719e421c07" title="BasicScreenObject::\lgetHeight" alt="" coords="400,185,543,224"/>
+</map>

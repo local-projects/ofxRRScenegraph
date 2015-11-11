@@ -1,0 +1,6 @@
+<map id="BasicScreenObject::setParent" name="BasicScreenObject::setParent">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a5adc29d56b314a51b6c61734122c0dd3" title="BasicScreenObject::\lisAddedToRenderer" alt="" coords="221,5,363,44"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a693d82aaa413e731e60a162bfbc0fc1a" title="BasicScreenObject::\lisParentTreeVisible" alt="" coords="221,68,363,107"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#aee6f64c5d6811f9fa4cd74f116cf9f20" title="BasicScreenObject::\lsetChildrenParentTreeVisibility" alt="" coords="437,97,640,136"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a7a69ef35c90bb46af179eacb0a105407" title="BasicScreenObject::\lsetChildrenParentTreeAdded\lToRenderer" alt="" coords="195,183,389,235"/>
+</map>

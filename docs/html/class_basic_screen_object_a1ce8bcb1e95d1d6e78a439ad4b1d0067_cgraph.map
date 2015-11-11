@@ -1,0 +1,5 @@
+<map id="BasicScreenObject::getScreenBoundingBox" name="BasicScreenObject::getScreenBoundingBox">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#af40612c721bbefccae7da7809827b1f7" title="BasicScreenObject::\lgetRoot" alt="" coords="219,29,361,68"/>
+<area shape="rect" id="node3" href="$class_renderer.html#aaf598fbbbded92519c890f6d41b32274" title="Renderer::getCamera" alt="" coords="215,92,365,117"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#af69b50bb6ac9943b37f7ce64c0c853ac" title="BasicScreenObject::\llocalToGlobal" alt="" coords="219,141,361,180"/>
+</map>

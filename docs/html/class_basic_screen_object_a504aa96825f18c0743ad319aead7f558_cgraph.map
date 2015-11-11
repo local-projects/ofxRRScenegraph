@@ -1,0 +1,7 @@
+<map id="BasicScreenObject::hide" name="BasicScreenObject::hide">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#aa01de5cdde6c778a074cbd054943f101" title="BasicScreenObject::\lfadeTo" alt="" coords="221,5,363,44"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a8287ddd194d014cfe6b4dc293b75b2b2" title="BasicScreenObject::\lhideAfterTimer" alt="" coords="221,68,363,107"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#a434a14d957bef877cdd3362fa43fdd04" title="BasicScreenObject::hide" alt="" coords="411,75,578,100"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a9d79776c348566b979cf20777fa627a4" title="BasicScreenObject::\lisVisible" alt="" coords="626,36,768,75"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#a29d0d987de5b91466e401e9c500990cb" title="BasicScreenObject::\lsetAlpha" alt="" coords="626,99,768,137"/>
+</map>

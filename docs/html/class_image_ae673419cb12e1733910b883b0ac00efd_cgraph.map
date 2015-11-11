@@ -1,0 +1,7 @@
+<map id="Image::scaleFitPad" name="Image::scaleFitPad">
+<area shape="rect" id="node2" href="$class_image.html#ab52b1d4c9e7fd51681ac0fa44b9b94c3" title="Image::setMaxSize" alt="" coords="189,5,324,31"/>
+<area shape="rect" id="node3" href="$class_image.html#a611b8751a19e4d1930950451050f3d2a" title="Image::updateSize" alt="" coords="190,55,322,80"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="556,99,699,137"/>
+<area shape="rect" id="node4" href="$class_image.html#a46b523f37d9692772312984a480f02f6" title="Image::setSize" alt="" coords="372,55,481,80"/>
+<area shape="rect" id="node6" href="$class_image.html#adc3f40627ba638546fd0250a91401da8" title="Image::updateRealImageSize" alt="" coords="529,49,726,75"/>
+</map>

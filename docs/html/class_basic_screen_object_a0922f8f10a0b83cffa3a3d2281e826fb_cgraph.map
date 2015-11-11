@@ -1,0 +1,8 @@
+<map id="BasicScreenObject::onTweenComplete" name="BasicScreenObject::onTweenComplete">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#aa3a3003ed84bc2884f0d7733d5781307" title="BasicScreenObject::\lsetPosition" alt="" coords="195,5,338,44"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a3bb42776a73b64ff7204eaf2f1ccfe5e" title="BasicScreenObject::\lsetOrientation" alt="" coords="195,68,338,107"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#afd27fb67dd45f7952c929ec40979ca5c" title="BasicScreenObject::\lsetColor" alt="" coords="195,131,338,169"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a29d0d987de5b91466e401e9c500990cb" title="BasicScreenObject::\lsetAlpha" alt="" coords="195,193,338,232"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#a9d79776c348566b979cf20777fa627a4" title="BasicScreenObject::\lisVisible" alt="" coords="195,256,338,295"/>
+<area shape="rect" id="node7" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="195,319,338,357"/>
+</map>

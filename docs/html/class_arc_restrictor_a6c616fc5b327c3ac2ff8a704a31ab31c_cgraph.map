@@ -1,0 +1,7 @@
+<map id="ArcRestrictor::restrict" name="ArcRestrictor::restrict">
+<area shape="rect" id="node2" href="$class_math_helper.html#ab9b22d69db9ead5e54513d1520860307" title="MathHelper::isAnlgeBetween" alt="" coords="199,5,392,31"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#add0f783042f69f875e7056df603d5a7f" title="BasicScreenObject::setX" alt="" coords="211,55,380,80"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#a576c8255d108c236d2de168cad19c28c" title="BasicScreenObject::setY" alt="" coords="211,104,380,129"/>
+<area shape="rect" id="node3" href="$class_math_helper.html#a71bd1730d118cb8d50f37e391c4cf52d" title="MathHelper::cleanAngle" alt="" coords="440,5,604,31"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#aa3a3003ed84bc2884f0d7733d5781307" title="BasicScreenObject::\lsetPosition" alt="" coords="451,76,593,115"/>
+</map>

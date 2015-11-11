@@ -1,0 +1,5 @@
+<map id="Renderer::setupColorPicker" name="Renderer::setupColorPicker">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="239,5,381,44"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a9121f99c88adcbcf39da77ce57b55c9f" title="BasicScreenObject::\lgetWidth" alt="" coords="239,68,381,107"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#a1c57b6c8779b7179561cce719e421c07" title="BasicScreenObject::\lgetHeight" alt="" coords="239,131,381,169"/>
+</map>

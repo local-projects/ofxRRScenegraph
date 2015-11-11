@@ -3,6 +3,7 @@
 //--------------------------------------------------------------
 void ofApp::setup() {
   ofSetRectMode(OF_RECTMODE_CORNER);
+  ofSetFrameRate(60);
 
   renderer.setSize(ofGetWidth(), ofGetHeight());
   renderer.setupColorPicker(ofGetWidth(), ofGetHeight(), 2, 3);
@@ -15,7 +16,7 @@ void ofApp::setup() {
     buttons[i].setColor(255, 0, 0);
     buttons[i].enableDepthTest();
     buttons[i].setRandomColor();
-    // cont.addChild(&buttons[i]);
+    cont.addChild(&buttons[i]);
   }
 
   textField.setSize(500, 500);
@@ -23,9 +24,11 @@ void ofApp::setup() {
 
   cont.addChild(&textField);
 
+  //  renderer.getEasyCam()->enableOrtho();
+  renderer.getEasyCam()->disableMouseInput();
   renderer.addChild(&cont);
 
-  //    ofSetVerticalSync(false);
+  //
 }
 
 //--------------------------------------------------------------
@@ -36,6 +39,8 @@ void ofApp::update() {
 void ofApp::draw() {
   ofBackground(0, 0, 0);
   renderer.draw();
+
+  renderer.drawForPicking();
 }
 
 //--------------------------------------------------------------

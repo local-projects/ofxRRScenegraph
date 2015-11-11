@@ -1,0 +1,26 @@
+<map id="BasicScreenObject::~BasicScreenObject" name="BasicScreenObject::~BasicScreenObject">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a16911f6d5395a15be94eaef8a5edc692" title="BasicScreenObject::\lsetup" alt="" coords="396,5,538,44"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a0f2f11e2774285fca89733c82482090a" title="BasicScreenObject::\l_setup" alt="" coords="196,111,338,149"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#a62bb813f1132618ac36e02a0afc340f6" title="BasicScreenObject::\lupdate" alt="" coords="396,68,538,107"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a39f4548c7c7254fbc6a1b8df1a76586e" title="BasicScreenObject::\l_update" alt="" coords="196,368,338,407"/>
+<area shape="rect" id="node17" href="$class_basic_screen_object.html#accdd5e8af3e95c8442d90d87e91e9e62" title="BasicScreenObject::exit" alt="" coords="386,848,549,873"/>
+<area shape="rect" id="node18" href="$class_basic_screen_object.html#a131076d7b471adfc4728ba4f5b09d44d" title="BasicScreenObject::\l_exit" alt="" coords="196,723,338,761"/>
+<area shape="rect" id="node19" href="$class_basic_screen_object.html#a87c8dbe6301bf25c4e416f599d12b8ca" title="BasicScreenObject::\lonKill" alt="" coords="196,785,338,824"/>
+<area shape="rect" id="node21" href="$class_basic_screen_object.html#a7f93c2dcdb5423511e1b4c4ee11999de" title="BasicScreenObject::\lonShow" alt="" coords="196,848,338,887"/>
+<area shape="rect" id="node22" href="$class_basic_screen_object.html#aa098efb3e35e6f0341220bcef28c485a" title="BasicScreenObject::\lonHide" alt="" coords="196,911,338,949"/>
+<area shape="rect" id="node23" href="$class_basic_screen_object.html#a0922f8f10a0b83cffa3a3d2281e826fb" title="BasicScreenObject::\lonTweenComplete" alt="" coords="196,608,338,647"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#a0fb374be7e0620a38f84372edd6c3c84" title="BasicScreenObject::\lfirstUpdate" alt="" coords="396,368,538,407"/>
+<area shape="rect" id="node7" href="$class_basic_screen_object.html#aa3a3003ed84bc2884f0d7733d5781307" title="BasicScreenObject::\lsetPosition" alt="" coords="396,483,538,521"/>
+<area shape="rect" id="node8" href="$class_basic_screen_object.html#afd27fb67dd45f7952c929ec40979ca5c" title="BasicScreenObject::\lsetColor" alt="" coords="396,545,538,584"/>
+<area shape="rect" id="node9" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="396,608,538,647"/>
+<area shape="rect" id="node10" href="$class_basic_screen_object.html#a3bb42776a73b64ff7204eaf2f1ccfe5e" title="BasicScreenObject::\lsetOrientation" alt="" coords="787,392,929,431"/>
+<area shape="rect" id="node11" href="$class_basic_screen_object.html#ae24331b39b9371d06b16ed96bbe32be1" title="BasicScreenObject::\ldoRotate" alt="" coords="396,256,538,295"/>
+<area shape="rect" id="node13" href="$class_basic_screen_object.html#ae017e259bf066ed082d94b2e78020db6" title="BasicScreenObject::\ldoMove" alt="" coords="396,131,538,169"/>
+<area shape="rect" id="node15" href="$class_basic_screen_object.html#a36f1dd3212020b79dae4fea170277a10" title="BasicScreenObject::\ldoOrderChildrenByZ" alt="" coords="396,193,539,232"/>
+<area shape="rect" id="node16" href="$class_i_positioner.html#a594a49ddcfb27beb5c02c6e11779524e" title="IPositioner::restrict" alt="" coords="402,319,533,344"/>
+<area shape="rect" id="node12" href="$class_basic_screen_object.html#a8fbca01485d0e9aff9f6ce8ff0f997ff" title="BasicScreenObject::\laddRotation" alt="" coords="597,287,739,325"/>
+<area shape="rect" id="node14" href="$class_basic_screen_object.html#aad0e0777673a35f03fcaba98d6602767" title="BasicScreenObject::\laddSpeed" alt="" coords="597,131,739,169"/>
+<area shape="rect" id="node20" href="$class_basic_screen_object.html#a479e3b90936966118c9fcbe6762e31ff" title="BasicScreenObject::\l_onKill" alt="" coords="396,897,538,936"/>
+<area shape="rect" id="node24" href="$class_basic_screen_object.html#a29d0d987de5b91466e401e9c500990cb" title="BasicScreenObject::\lsetAlpha" alt="" coords="396,723,538,761"/>
+<area shape="rect" id="node25" href="$class_basic_screen_object.html#a9d79776c348566b979cf20777fa627a4" title="BasicScreenObject::\lisVisible" alt="" coords="396,785,538,824"/>
+</map>

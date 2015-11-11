@@ -1,0 +1,14 @@
+<map id="Renderer::draw" name="Renderer::draw">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a7e948626e141f60c5a55dec26b0951f1" title="BasicScreenObject::draw" alt="" coords="167,187,338,212"/>
+<area shape="rect" id="node13" href="$class_renderer.html#a81ebf5419676b2d2b8a6b8e819553727" title="Renderer::drawCursors" alt="" coords="386,5,545,31"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a96d3299e9ec9c635e5ab97bafdbb7a2f" title="BasicScreenObject::\lsetupMask" alt="" coords="394,180,537,219"/>
+<area shape="rect" id="node8" href="$class_basic_screen_object.html#a1a418b01a9bb0b88a1babd818298c0c6" title="BasicScreenObject::\lgetCombinedAlpha" alt="" coords="394,329,537,368"/>
+<area shape="rect" id="node9" href="$class_basic_screen_object.html#a72adf32ac30c4363f8e9d97e1311e992" title="BasicScreenObject::\l_draw" alt="" coords="394,392,537,431"/>
+<area shape="rect" id="node10" href="$class_basic_screen_object.html#ac5530fca3a12d56d20363b2392f128e0" title="BasicScreenObject::\ldrawChildren" alt="" coords="394,55,537,93"/>
+<area shape="rect" id="node11" href="$class_basic_screen_object.html#a2faec0005fa0a8488a85059d0713e885" title="BasicScreenObject::\l_drawAfterChildren" alt="" coords="394,117,537,156"/>
+<area shape="rect" id="node12" href="$class_basic_screen_object.html#a74b5f87064665fc69af24af41d8fc5bf" title="BasicScreenObject::\lrestoreMask" alt="" coords="394,243,537,281"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#afb336b62c8f08125136ca7de56eff0e5" title="BasicScreenObject::\ldisableDepthTest" alt="" coords="593,173,736,212"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#af69b50bb6ac9943b37f7ce64c0c853ac" title="BasicScreenObject::\llocalToGlobal" alt="" coords="593,236,736,275"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#a1c57b6c8779b7179561cce719e421c07" title="BasicScreenObject::\lgetHeight" alt="" coords="593,7,736,45"/>
+<area shape="rect" id="node7" href="$class_basic_screen_object.html#a9121f99c88adcbcf39da77ce57b55c9f" title="BasicScreenObject::\lgetWidth" alt="" coords="593,97,736,136"/>
+</map>

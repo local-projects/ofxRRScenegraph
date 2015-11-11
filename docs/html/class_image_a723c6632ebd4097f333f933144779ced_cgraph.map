@@ -1,0 +1,8 @@
+<map id="Image::cropFitScale" name="Image::cropFitScale">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a9121f99c88adcbcf39da77ce57b55c9f" title="BasicScreenObject::\lgetWidth" alt="" coords="193,5,335,44"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a1c57b6c8779b7179561cce719e421c07" title="BasicScreenObject::\lgetHeight" alt="" coords="193,68,335,107"/>
+<area shape="rect" id="node4" href="$class_image.html#a46b523f37d9692772312984a480f02f6" title="Image::setSize" alt="" coords="210,180,319,205"/>
+<area shape="rect" id="node7" href="$class_image.html#a517b22e385b2cb5626cc05f454938bba" title="Image::crop" alt="" coords="218,131,310,156"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="411,124,553,163"/>
+<area shape="rect" id="node6" href="$class_image.html#adc3f40627ba638546fd0250a91401da8" title="Image::updateRealImageSize" alt="" coords="383,187,580,212"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="BasicScreenObject::setupMask" name="BasicScreenObject::setupMask">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#afb336b62c8f08125136ca7de56eff0e5" title="BasicScreenObject::\ldisableDepthTest" alt="" coords="210,99,352,137"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a7e948626e141f60c5a55dec26b0951f1" title="BasicScreenObject::draw" alt="" coords="195,161,366,187"/>
+<area shape="rect" id="node9" href="$class_basic_screen_object.html#af69b50bb6ac9943b37f7ce64c0c853ac" title="BasicScreenObject::\llocalToGlobal" alt="" coords="210,211,352,249"/>
+<area shape="rect" id="node10" href="$class_basic_screen_object.html#a1c57b6c8779b7179561cce719e421c07" title="BasicScreenObject::\lgetHeight" alt="" coords="210,273,352,312"/>
+<area shape="rect" id="node11" href="$class_basic_screen_object.html#a9121f99c88adcbcf39da77ce57b55c9f" title="BasicScreenObject::\lgetWidth" alt="" coords="210,336,352,375"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#a1a418b01a9bb0b88a1babd818298c0c6" title="BasicScreenObject::\lgetCombinedAlpha" alt="" coords="414,29,557,68"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a72adf32ac30c4363f8e9d97e1311e992" title="BasicScreenObject::\l_draw" alt="" coords="414,92,557,131"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#ac5530fca3a12d56d20363b2392f128e0" title="BasicScreenObject::\ldrawChildren" alt="" coords="414,155,557,193"/>
+<area shape="rect" id="node7" href="$class_basic_screen_object.html#a2faec0005fa0a8488a85059d0713e885" title="BasicScreenObject::\l_drawAfterChildren" alt="" coords="414,217,557,256"/>
+<area shape="rect" id="node8" href="$class_basic_screen_object.html#a74b5f87064665fc69af24af41d8fc5bf" title="BasicScreenObject::\lrestoreMask" alt="" coords="414,280,557,319"/>
+</map>

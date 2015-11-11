@@ -1,0 +1,34 @@
+<map id="Renderer::update" name="Renderer::update">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a0e74c0fd74ab87046c28c40b72c9622e" title="BasicScreenObject::\ldrawForPicking" alt="" coords="188,144,330,183"/>
+<area shape="rect" id="node15" href="$class_renderer.html#a85b8a5dd88b09b37cb0d6d97b9af6422" title="Renderer::notifyObjects" alt="" coords="178,425,340,451"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a96d3299e9ec9c635e5ab97bafdbb7a2f" title="BasicScreenObject::\lsetupMask" alt="" coords="398,175,540,213"/>
+<area shape="rect" id="node10" href="$class_basic_screen_object.html#a74b5f87064665fc69af24af41d8fc5bf" title="BasicScreenObject::\lrestoreMask" alt="" coords="824,5,966,44"/>
+<area shape="rect" id="node14" href="$class_basic_screen_object.html#a8772721611c45ef09e5b092a30fda59d" title="BasicScreenObject::\ldrawChildrenForPicking" alt="" coords="388,112,551,151"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#afb336b62c8f08125136ca7de56eff0e5" title="BasicScreenObject::\ldisableDepthTest" alt="" coords="613,119,755,157"/>
+<area shape="rect" id="node5" href="$class_basic_screen_object.html#a7e948626e141f60c5a55dec26b0951f1" title="BasicScreenObject::draw" alt="" coords="599,181,770,207"/>
+<area shape="rect" id="node11" href="$class_basic_screen_object.html#af69b50bb6ac9943b37f7ce64c0c853ac" title="BasicScreenObject::\llocalToGlobal" alt="" coords="613,231,755,269"/>
+<area shape="rect" id="node12" href="$class_basic_screen_object.html#a1c57b6c8779b7179561cce719e421c07" title="BasicScreenObject::\lgetHeight" alt="" coords="613,293,755,332"/>
+<area shape="rect" id="node13" href="$class_basic_screen_object.html#a9121f99c88adcbcf39da77ce57b55c9f" title="BasicScreenObject::\lgetWidth" alt="" coords="613,56,755,95"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#a1a418b01a9bb0b88a1babd818298c0c6" title="BasicScreenObject::\lgetCombinedAlpha" alt="" coords="824,99,966,137"/>
+<area shape="rect" id="node7" href="$class_basic_screen_object.html#a72adf32ac30c4363f8e9d97e1311e992" title="BasicScreenObject::\l_draw" alt="" coords="824,161,966,200"/>
+<area shape="rect" id="node8" href="$class_basic_screen_object.html#ac5530fca3a12d56d20363b2392f128e0" title="BasicScreenObject::\ldrawChildren" alt="" coords="824,224,966,263"/>
+<area shape="rect" id="node9" href="$class_basic_screen_object.html#a2faec0005fa0a8488a85059d0713e885" title="BasicScreenObject::\l_drawAfterChildren" alt="" coords="824,287,966,325"/>
+<area shape="rect" id="node16" href="$class_renderer.html#acd91923418105404f6ff4896d4e8d459" title="Renderer::getObjectAt" alt="" coords="392,481,546,507"/>
+<area shape="rect" id="node18" href="$class_basic_interactive_object.html#aa27d8dd93fe430d26b6e6ef2c36abdbb" title="BasicInteractiveObject\l::touchDownOutside" alt="" coords="392,531,546,569"/>
+<area shape="rect" id="node19" href="$class_basic_interactive_object.html#a1ef571d4248fe1b14239b8a556eeedd2" title="BasicInteractiveObject\l::touchMovedOutside" alt="" coords="392,656,546,695"/>
+<area shape="rect" id="node24" href="$class_basic_interactive_object.html#a08b1e4fc7c92827cbdea030414853003" title="BasicInteractiveObject\l::touchUpOutside" alt="" coords="392,356,546,395"/>
+<area shape="rect" id="node30" href="$class_basic_interactive_object.html#a58f51eace688bfdb993ada9c95400cfe" title="BasicInteractiveObject\l::touchDownOnMe" alt="" coords="392,419,546,457"/>
+<area shape="rect" id="node32" href="$class_basic_interactive_object.html#a4bde07c9e02691ad9d97408de4336a88" title="BasicInteractiveObject\l::touchMovedOnMe" alt="" coords="392,593,546,632"/>
+<area shape="rect" id="node33" href="$class_basic_interactive_object.html#ac02d681c048ebdb35c3b23a29812b606" title="BasicInteractiveObject\l::touchUpOnMe" alt="" coords="392,293,546,332"/>
+<area shape="rect" id="node17" href="$class_basic_interactive_object.html#a8b6109a55167864408983ac095f32fde" title="BasicInteractiveObject\l::colorToPickingName" alt="" coords="607,481,761,520"/>
+<area shape="rect" id="node20" href="$class_basic_interactive_object.html#af4b86386ae7b750a59fe7f554532937d" title="BasicInteractiveObject\l::updateMultiTouch" alt="" coords="607,587,761,625"/>
+<area shape="rect" id="node21" href="$class_basic_interactive_object.html#a646e357325e3a72d71cde561c0e8d0ec" title="BasicInteractiveObject\l::isMultiTouchActive" alt="" coords="818,505,972,544"/>
+<area shape="rect" id="node22" href="$class_basic_screen_object.html#a15821c7f87b98b19f7eee2380c1cc9ae" title="BasicScreenObject::\lglobalToLocal" alt="" coords="824,580,966,619"/>
+<area shape="rect" id="node23" href="$class_basic_screen_object.html#ac4e01f82cef84005439f1ab1056e6cde" title="BasicScreenObject::\lgetParent" alt="" coords="1032,580,1174,619"/>
+<area shape="rect" id="node25" href="$class_basic_interactive_object.html#ab5053d87020b56e2bf807183c8f1f19c" title="BasicInteractiveObject\l::removeMultiTouch" alt="" coords="607,356,761,395"/>
+<area shape="rect" id="node26" href="$class_basic_interactive_object.html#ac5d2b532d588cb658b5f5077cfe9fb9d" title="BasicInteractiveObject\l::getNumActiveTouches" alt="" coords="1022,356,1184,395"/>
+<area shape="rect" id="node27" href="$class_basic_interactive_object.html#acaedb13a1e452917aa3101aac8aab6be" title="BasicInteractiveObject\l::resetMTStartValues" alt="" coords="818,419,972,457"/>
+<area shape="rect" id="node28" href="$class_basic_interactive_object.html#a1dc5b26d30f2cb8e2de1fb148775e385" title="BasicInteractiveObject\l::getCurrentMtTransform" alt="" coords="1020,419,1187,457"/>
+<area shape="rect" id="node29" href="$class_basic_interactive_object.html#a23fa7eaa16d4bbec47f0356c15e8908c" title="BasicInteractiveObject\l::getCurrentMtTranslate" alt="" coords="1022,481,1184,520"/>
+<area shape="rect" id="node31" href="$class_basic_interactive_object.html#a10110ec281adc5f928fa9fb83a8b40e2" title="BasicInteractiveObject\l::addMultiTouch" alt="" coords="607,419,761,457"/>
+</map>

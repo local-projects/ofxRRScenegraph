@@ -1,0 +1,7 @@
+<map id="Image::update" name="Image::update">
+<area shape="rect" id="node2" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="535,5,677,44"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a9d79776c348566b979cf20777fa627a4" title="BasicScreenObject::\lisVisible" alt="" coords="160,35,302,73"/>
+<area shape="rect" id="node4" href="$class_image.html#a611b8751a19e4d1930950451050f3d2a" title="Image::updateSize" alt="" coords="165,97,297,123"/>
+<area shape="rect" id="node5" href="$class_image.html#a46b523f37d9692772312984a480f02f6" title="Image::setSize" alt="" coords="350,83,460,108"/>
+<area shape="rect" id="node6" href="$class_image.html#adc3f40627ba638546fd0250a91401da8" title="Image::updateRealImageSize" alt="" coords="508,83,705,108"/>
+</map>

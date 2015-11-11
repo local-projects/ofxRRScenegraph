@@ -1,0 +1,7 @@
+<map id="BasicInteractiveObject::removeMultiTouch" name="BasicInteractiveObject::removeMultiTouch">
+<area shape="rect" id="node2" href="$class_basic_interactive_object.html#a646e357325e3a72d71cde561c0e8d0ec" title="BasicInteractiveObject\l::isMultiTouchActive" alt="" coords="207,5,361,44"/>
+<area shape="rect" id="node3" href="$class_basic_interactive_object.html#ac5d2b532d588cb658b5f5077cfe9fb9d" title="BasicInteractiveObject\l::getNumActiveTouches" alt="" coords="412,61,573,100"/>
+<area shape="rect" id="node4" href="$class_basic_interactive_object.html#acaedb13a1e452917aa3101aac8aab6be" title="BasicInteractiveObject\l::resetMTStartValues" alt="" coords="207,123,361,161"/>
+<area shape="rect" id="node5" href="$class_basic_interactive_object.html#a1dc5b26d30f2cb8e2de1fb148775e385" title="BasicInteractiveObject\l::getCurrentMtTransform" alt="" coords="409,124,576,163"/>
+<area shape="rect" id="node6" href="$class_basic_interactive_object.html#a23fa7eaa16d4bbec47f0356c15e8908c" title="BasicInteractiveObject\l::getCurrentMtTranslate" alt="" coords="412,187,574,225"/>
+</map>

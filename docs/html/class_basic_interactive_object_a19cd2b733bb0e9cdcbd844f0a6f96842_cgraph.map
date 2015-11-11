@@ -1,0 +1,19 @@
+<map id="BasicInteractiveObject::BasicInteractiveObject" name="BasicInteractiveObject::BasicInteractiveObject">
+<area shape="rect" id="node2" href="$class_basic_interactive_object.html#ab2e49df32c45369ab9cab78aaa2bc20f" title="BasicInteractiveObject\l::onFirstTouchDown" alt="" coords="232,5,386,44"/>
+<area shape="rect" id="node3" href="$class_basic_interactive_object.html#a9bda814cff13231b542dccacbe50fdd5" title="BasicInteractiveObject\l::onLastTouchUp" alt="" coords="232,68,386,107"/>
+<area shape="rect" id="node4" href="$class_basic_interactive_object.html#a5418347c3ff3302e860ef745c3b07391" title="BasicInteractiveObject\l::onTap" alt="" coords="232,131,386,169"/>
+<area shape="rect" id="node5" href="$class_basic_interactive_object.html#a0bf79be4863356168c2e165d8a990fe5" title="BasicInteractiveObject\l::onDoubleTap" alt="" coords="232,193,386,232"/>
+<area shape="rect" id="node6" href="$class_basic_interactive_object.html#a54ff18ac05f41735a7f4ab8d3775a5dc" title="BasicInteractiveObject\l::onSwipeUp" alt="" coords="232,256,386,295"/>
+<area shape="rect" id="node7" href="$class_basic_interactive_object.html#ad804dda913701c25703e7b8a2dbcebfb" title="BasicInteractiveObject\l::onSwipeDown" alt="" coords="232,319,386,357"/>
+<area shape="rect" id="node8" href="$class_basic_interactive_object.html#a7874261525aea899d8d7959db7cff06c" title="BasicInteractiveObject\l::onSwipeLeft" alt="" coords="232,381,386,420"/>
+<area shape="rect" id="node9" href="$class_basic_interactive_object.html#a90482dd2f486a13085ef11ec149f584d" title="BasicInteractiveObject\l::onSwipeRight" alt="" coords="232,444,386,483"/>
+<area shape="rect" id="node10" href="$class_basic_interactive_object.html#ab29e3e3dda8a6c53c69ed017e1906950" title="BasicInteractiveObject\l::onScaleStart" alt="" coords="232,507,386,545"/>
+<area shape="rect" id="node11" href="$class_basic_interactive_object.html#af3866d22dd3c1f18c1f3709094a2fb46" title="BasicInteractiveObject\l::onScaleStop" alt="" coords="232,569,386,608"/>
+<area shape="rect" id="node12" href="$class_basic_interactive_object.html#a8f0e477fae289e3b1638a8553d075af7" title="BasicInteractiveObject\l::onDragStart" alt="" coords="232,632,386,671"/>
+<area shape="rect" id="node13" href="$class_basic_interactive_object.html#a3ba8eadf2e7e3b98ded70b25b3d8638b" title="BasicInteractiveObject\l::onDragStop" alt="" coords="232,695,386,733"/>
+<area shape="rect" id="node14" href="$class_basic_interactive_object.html#a0d6d12cdcc75cf9eab7a8c1ae032748c" title="BasicInteractiveObject\l::onRotateStart" alt="" coords="232,757,386,796"/>
+<area shape="rect" id="node15" href="$class_basic_interactive_object.html#a97949ec62cc0266ecb305d1f27aedd51" title="BasicInteractiveObject\l::onRotateStop" alt="" coords="232,820,386,859"/>
+<area shape="rect" id="node16" href="$class_basic_interactive_object.html#a06d6cbaed2fedeb928d973bd732b1d64" title="BasicInteractiveObject\l::onStartMultiTouchScope" alt="" coords="222,883,395,921"/>
+<area shape="rect" id="node17" href="$class_basic_interactive_object.html#a423bbdc4b5d71b7548d02e8c41c8abe2" title="BasicInteractiveObject\l::onUpdateMultiTouchScope" alt="" coords="215,945,403,984"/>
+<area shape="rect" id="node18" href="$class_basic_interactive_object.html#a6bbe165b93a28202aff95b8ac2a5f769" title="BasicInteractiveObject\l::onEndMultiTouchScope" alt="" coords="224,1008,393,1047"/>
+</map>

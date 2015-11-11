@@ -1,0 +1,5 @@
+<map id="RotationRestrictor::restrict" name="RotationRestrictor::restrict">
+<area shape="rect" id="node2" href="$class_math_helper.html#ab9b22d69db9ead5e54513d1520860307" title="MathHelper::isAnlgeBetween" alt="" coords="181,5,375,31"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#a3bb42776a73b64ff7204eaf2f1ccfe5e" title="BasicScreenObject::\lsetOrientation" alt="" coords="207,55,349,93"/>
+<area shape="rect" id="node3" href="$class_math_helper.html#a71bd1730d118cb8d50f37e391c4cf52d" title="MathHelper::cleanAngle" alt="" coords="423,5,586,31"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="BasicInteractiveObject::updateMultiTouch" name="BasicInteractiveObject::updateMultiTouch">
+<area shape="rect" id="node2" href="$class_basic_interactive_object.html#a646e357325e3a72d71cde561c0e8d0ec" title="BasicInteractiveObject\l::isMultiTouchActive" alt="" coords="207,5,361,44"/>
+<area shape="rect" id="node3" href="$class_basic_screen_object.html#a15821c7f87b98b19f7eee2380c1cc9ae" title="BasicScreenObject::\lglobalToLocal" alt="" coords="213,68,355,107"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#ac4e01f82cef84005439f1ab1056e6cde" title="BasicScreenObject::\lgetParent" alt="" coords="409,68,551,107"/>
+</map>

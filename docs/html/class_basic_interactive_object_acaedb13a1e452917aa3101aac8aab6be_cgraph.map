@@ -1,0 +1,5 @@
+<map id="BasicInteractiveObject::resetMTStartValues" name="BasicInteractiveObject::resetMTStartValues">
+<area shape="rect" id="node2" href="$class_basic_interactive_object.html#ac5d2b532d588cb658b5f5077cfe9fb9d" title="BasicInteractiveObject\l::getNumActiveTouches" alt="" coords="210,5,371,44"/>
+<area shape="rect" id="node3" href="$class_basic_interactive_object.html#a1dc5b26d30f2cb8e2de1fb148775e385" title="BasicInteractiveObject\l::getCurrentMtTransform" alt="" coords="207,68,374,107"/>
+<area shape="rect" id="node4" href="$class_basic_interactive_object.html#a23fa7eaa16d4bbec47f0356c15e8908c" title="BasicInteractiveObject\l::getCurrentMtTranslate" alt="" coords="210,131,372,169"/>
+</map>

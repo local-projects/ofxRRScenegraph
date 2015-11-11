@@ -1,0 +1,13 @@
+<map id="ScrollableTextArea::setText" name="ScrollableTextArea::setText">
+<area shape="rect" id="node2" href="$class_text_field.html#ac0306eb2d508b2f608af6a512e48820f" title="TextField::setText" alt="" coords="192,5,316,31"/>
+<area shape="rect" id="node3" href="$class_scrollable_text_area.html#af28d3ceee724483fdebdad4a5fb78fa9" title="ScrollableTextArea\l::scrollTo" alt="" coords="188,55,320,93"/>
+<area shape="rect" id="node5" href="$class_scrollable_text_area.html#a9de0a2167bae3040a9a474df2d293c0c" title="ScrollableTextArea\l::_updateScrollSize" alt="" coords="186,165,322,204"/>
+<area shape="rect" id="node4" href="$class_basic_screen_object.html#aa3a3003ed84bc2884f0d7733d5781307" title="BasicScreenObject::\lsetPosition" alt="" coords="396,31,538,69"/>
+<area shape="rect" id="node6" href="$class_basic_screen_object.html#a233b3280fea286ebef975a1a2840f84e" title="BasicScreenObject::\lsetSize" alt="" coords="980,113,1122,152"/>
+<area shape="rect" id="node7" href="$class_text_field.html#a5bd144d37c79addfefae96436d581a72" title="TextField::getTextBounds" alt="" coords="382,145,553,171"/>
+<area shape="rect" id="node9" href="$class_text_field.html#a46383061e4e5ff4544bc826b55d8e053" title="TextField::setSize" alt="" coords="806,145,932,171"/>
+<area shape="rect" id="node10" href="$class_basic_screen_object.html#a1c57b6c8779b7179561cce719e421c07" title="BasicScreenObject::\lgetHeight" alt="" coords="396,247,538,285"/>
+<area shape="rect" id="node11" href="$class_basic_screen_object.html#a9121f99c88adcbcf39da77ce57b55c9f" title="BasicScreenObject::\lgetWidth" alt="" coords="396,309,538,348"/>
+<area shape="rect" id="node12" href="$class_area_restrictor.html#a461d0b5622c097bf51987677e4e86f0b" title="AreaRestrictor::setRestriction\lValue" alt="" coords="370,372,565,411"/>
+<area shape="rect" id="node8" href="$class_text_field.html#a5d5218daec914a4232bdd02221900f9d" title="TextField::renderText" alt="" coords="613,145,758,171"/>
+</map>

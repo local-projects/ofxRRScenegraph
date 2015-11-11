@@ -1,0 +1,12 @@
+<map id="BasicInteractiveObject::updateMtTransform" name="BasicInteractiveObject::updateMtTransform">
+<area shape="rect" id="node2" href="$class_basic_interactive_object.html#a646ed8a5561a628ffac28a0a0ca465e6" title="BasicInteractiveObject\l::isDraggable" alt="" coords="214,5,368,44"/>
+<area shape="rect" id="node3" href="$class_basic_interactive_object.html#a244cf1ffa98ce16b07e010131c41d0a5" title="BasicInteractiveObject\l::isRotateable" alt="" coords="214,68,368,107"/>
+<area shape="rect" id="node4" href="$class_basic_interactive_object.html#af6a3aa31f6ca75af56c45ea07fa4251e" title="BasicInteractiveObject\l::isScaleable" alt="" coords="214,131,368,169"/>
+<area shape="rect" id="node5" href="$class_basic_interactive_object.html#a1dc5b26d30f2cb8e2de1fb148775e385" title="BasicInteractiveObject\l::getCurrentMtTransform" alt="" coords="207,193,374,232"/>
+<area shape="rect" id="node6" href="$class_basic_interactive_object.html#ac5d2b532d588cb658b5f5077cfe9fb9d" title="BasicInteractiveObject\l::getNumActiveTouches" alt="" coords="210,256,371,295"/>
+<area shape="rect" id="node7" href="$class_basic_interactive_object.html#a8d5e85c60980af3398b33482495f23f2" title="BasicInteractiveObject\l::isScaleAuto" alt="" coords="214,319,368,357"/>
+<area shape="rect" id="node8" href="$class_basic_interactive_object.html#a032be32cfdac81688d05e7988f420672" title="BasicInteractiveObject\l::isRotateAuto" alt="" coords="214,381,368,420"/>
+<area shape="rect" id="node9" href="$class_basic_interactive_object.html#a50a64e9e0eb290fd66055600d1c931c8" title="BasicInteractiveObject\l::isStDraggable" alt="" coords="214,444,368,483"/>
+<area shape="rect" id="node10" href="$class_basic_interactive_object.html#a23fa7eaa16d4bbec47f0356c15e8908c" title="BasicInteractiveObject\l::getCurrentMtTranslate" alt="" coords="210,507,372,545"/>
+<area shape="rect" id="node11" href="$class_basic_interactive_object.html#a97d9e07eea456009497e178bf517a58d" title="BasicInteractiveObject\l::isDragAuto" alt="" coords="214,569,368,608"/>
+</map>
