@@ -22,8 +22,6 @@
  */
 
 #pragma once
-#ifndef BASIC_SCREEN_OBJECT
-#define BASIC_SCREEN_OBJECT
 
 #include "ofMain.h"
 #include "ofxTimer.h"
@@ -475,4 +473,3 @@ private:
   bool isvisible;
   bool _isParentTreeVisible;
 };
-#endif

@@ -1,5 +1,6 @@
 #include "BasicInteractiveObject.h"
 #include "ofMain.h"
+#include "Elements.h"
 #include "Renderer.h"
 
 BasicInteractiveObject::BasicInteractiveObject() {
