@@ -5,7 +5,7 @@ This is a collection of classes to fill the need for a simple and versatile basi
 -----
 
 ##This Fork
-Kitschpatrol's fork adds openFrameworks 9.0 and 64-bit support. (64 bit support on Windows pending.) It moves all of the embedded dependencies into external repositories.
+Kitschpatrol's fork adds openFrameworks 9.0 and 64-bit support on Windows and Mac OS X. It moves all of the embedded dependencies into external repositories (listed at the bottom of this doc).
 
 
 -----
@@ -42,7 +42,7 @@ Everything else is not essential to the scenegraph but very helpful nonetheless:
 
 We used this Scenegraph for some Touchscreenapplications successfully. Although the Concept of putting almost all functionality into one magic object may not be the best way build this, but i like it that way, thats why.
 
-Make sure you have all the needed addons linked, the most important ones are included in the libs folder. Some of them are a bit modified. And if using ofxPango, be sure to link to all the needed libraries in header search paths.
+Make sure you have all the needed addons linked.search paths.
  
 The Pango version is a fork from roxlu with some added functionality like tabstops.
 
@@ -71,8 +71,9 @@ Mac OS X System Frameworks:
 ##TODO
 
 - Create addon_config.mk
-- 64-bit support on windows
-- Visual Studio 2015 example
+- Scroll limit elasticity
+- Arbitrary scrolllablecontainer contents
+- Namespacing
 
 
 
