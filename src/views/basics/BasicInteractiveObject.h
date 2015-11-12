@@ -117,11 +117,11 @@ public:
     return isdraggable;
   };
 
-  void isStDraggable(bool _isstdraggable) {
-    isstdraggable = _isstdraggable;
+  void isSingleTouchDraggable(bool _isSingleTouchDraggable) {
+    issingletouchdraggable = _isSingleTouchDraggable;
   };
-  bool isStDraggable() {
-    return isstdraggable;
+  bool isSingleTouchDraggable() {
+    return issingletouchdraggable;
   };
 
   void isScaleable(bool _isscaleable) {
@@ -252,7 +252,7 @@ protected:
 
   // Settings
 
-  bool isstdraggable;
+  bool issingletouchdraggable;
   bool isdraggable;
   bool isscaleable;
   bool isrotateable;

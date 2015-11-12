@@ -11,10 +11,10 @@ BasicInteractiveObject::BasicInteractiveObject() {
   mtscale = 1.0;
   mtrotate.set(0, 0, 0, 1);
 
-  isstdraggable = true;
-  isdraggable = true;
-  isscaleable = true;
-  isrotateable = true;
+  issingletouchdraggable = false;
+  isdraggable = false;
+  isscaleable = false;
+  isrotateable = false;
   isrotating = false;
   isscaling = false;
   isdragging = false;
@@ -483,7 +483,7 @@ void BasicInteractiveObject::updateMtTransform() {
   bool stAlsoOk = true;
 
   if (getNumActiveTouches() == 1) {
-    if (!isStDraggable()) {
+    if (!isSingleTouchDraggable()) {
       stAlsoOk = false;
     }
   }
