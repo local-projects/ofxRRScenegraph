@@ -34,5 +34,7 @@ void AreaRestrictor::restrict(BasicScreenObject *_object) {
     newpos.y = (restarea.y + restarea.height) - (srcarea.y + srcarea.height);
   }
 
-  _object->setPosition(newpos);
+  if (_object->getPosition() != newpos) {
+    _object->setPosition(newpos);
+  }
 };
