@@ -2,6 +2,7 @@
 #include "ofxTransitions.h"
 
 ScrollableContainer::ScrollableContainer() {
+
   ePadding = 0.0;
   _activeElementNr = 0;
   horizontalMode = false;
@@ -14,6 +15,8 @@ ScrollableContainer::ScrollableContainer() {
   defaultAppearTime = 300;
   snapToElementsTime = 500;
 
+  scrollContainer.isDraggable(true);
+  scrollContainer.isSingleTouchDraggable(true);
   scrollContainer.isScaleable(false);
   scrollContainer.isRotateable(false);
   scrollContainer.setDragDamping(0.3);

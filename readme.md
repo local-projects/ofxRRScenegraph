@@ -72,7 +72,10 @@ Mac OS X System Frameworks:
 
 - Create addon_config.mk
 - Scroll limit elasticity
-- Arbitrary scrolllablecontainer contents
+- "Stab to stop" scrollable container behavior
+- Thresholded snap-to-element behavior in scrollable container.
+- Arbitrary scrolllable container contents
+- Two-dimensional scrollable container
 - Namespacing
 
 
