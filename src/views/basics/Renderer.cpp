@@ -325,7 +325,7 @@ BasicScreenObject *Renderer::getObjectAt(float _screenx, float _screeny) {
 
   ofColor fboc = ofColor(mapPixels[index], mapPixels[index + 1], mapPixels[index + 2]);
 
-  cout << ofToString(fboc) << endl;
+//  cout << ofToString(fboc) << endl;
 
   // ofColor	fboc			= ofColor( mapPixels[index] , mapPixels[index] , mapPixels[index] );
   GLint pickingName = colorToPickingName(fboc);
