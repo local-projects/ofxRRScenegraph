@@ -245,6 +245,7 @@ public:
   float getAlpha();
   float getWidth();
   float getHeight();
+  ofVec2f getSize();
 
   ofColor getColor();
 

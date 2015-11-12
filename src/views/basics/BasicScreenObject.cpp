@@ -817,6 +817,10 @@ void BasicScreenObject::setSize(float _width, float _height) {
   }
 }
 
+ofVec2f BasicScreenObject::getSize() {
+  return ofVec2f(width, height);
+}
+
 /********************************************************
  *
  *	ROTATION
