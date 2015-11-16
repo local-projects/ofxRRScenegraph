@@ -13,6 +13,7 @@ Renderer::Renderer() {
   mousetouchid = -1;
 
   currentviewport = ofRectangle(0, 0, 0, 0);
+  cameraenabled = true;
 
   bTuioSetup = false;
   bColorPickerSetup = false;
@@ -85,7 +86,9 @@ void Renderer::update() {
       pickingmap.begin();
       ofClear(0);
       ofScale(mapscale, mapscale, mapscale);
-      camera.begin();
+      if (cameraenabled) {
+        camera.begin();
+      }
 
       // TODO solve this weird offset!!
       // Maybe coming from the window border?!
@@ -93,7 +96,9 @@ void Renderer::update() {
       ofTranslate(0, 0, -25);
 
       BasicScreenObject::drawForPicking();
-      camera.end();
+      if (cameraenabled) {
+        camera.end();
+      }
       pickingmap.end();
     }
 
@@ -126,9 +131,13 @@ void Renderer::forceUpdate() {
 
 void Renderer::draw() {
   currentviewport = ofGetCurrentViewport();
-  camera.begin();
+  if (cameraenabled) {
+    camera.begin();
+  }
   BasicScreenObject::draw();
-  camera.end();
+  if (cameraenabled) {
+    camera.end();
+  }
   if (drawcursors)
     drawCursors();
 }

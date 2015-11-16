@@ -68,6 +68,14 @@ public:
     return &camera;
   };
 
+  void isCameraEnabled(bool _cameraenabled) {
+    cameraenabled = _cameraenabled;
+    cameraenabled ? camera.enableMouseInput() : camera.disableMouseInput();
+  };
+  bool isCameraEnabled() {
+    return cameraenabled;
+  };
+
   long getLastInteractionMillis();
   void setIdleTimeout(int _millis) {
     idleTimeout = _millis;
@@ -171,6 +179,7 @@ protected:
   // Camera
   // ofCamera camera;
   ofEasyCam camera;
+  bool cameraenabled;
 
   // Save currentviewport, to enable raygeneration in update loop
   ofRectangle currentviewport;
