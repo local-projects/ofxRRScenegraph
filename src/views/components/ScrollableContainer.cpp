@@ -15,6 +15,7 @@ ScrollableContainer::ScrollableContainer() {
   defaultAppearTime = 300;
   snapToElementsTime = 500;
 
+  scrollContainer.setName("scrollContainer");
   scrollContainer.isDraggable(true);
   scrollContainer.isSingleTouchDraggable(true);
   scrollContainer.isScaleable(false);
@@ -159,6 +160,7 @@ void ScrollableContainer::_updateLayout(bool tweened) {
   // find width & hight of all elements in the final layout
   // set position for every element
   float contentPos = 0;
+  snapIsFullPage = true;
 
   for (int i = 0; i < elements.size(); i++) {
     BasicScreenObject *el = elements[i];
@@ -171,6 +173,11 @@ void ScrollableContainer::_updateLayout(bool tweened) {
       }
       contentPos += el->getWidth();
 
+      // if elements are smaller than than the scrollable container, then
+      // we need to change the snapping behavior
+      if (el->getWidth() < width) {
+        snapIsFullPage = false;
+      }
     } else {
       if (!tweened) {
         el->setPosition(0, contentPos);
@@ -178,6 +185,12 @@ void ScrollableContainer::_updateLayout(bool tweened) {
         el->moveTo(0, contentPos, defaultAppearTime);
       }
       contentPos += el->getHeight();
+
+      // if elements are smaller than than the scrollable container, then
+      // we need to change the snapping behavior
+      if (el->getHeight() < height) {
+        snapIsFullPage = false;
+      }
     }
 
     if (i != elements.size() - 1) {
@@ -236,29 +249,68 @@ void ScrollableContainer::_updateActiveElement() {
 }
 
 int ScrollableContainer::_findActiveElement() {
+
+  // if all elements are at least as big as the container, then the active
+  // element is the one that takes up the most screen space (ie it's at least
+  // 50% of the scroll view
+  // if the elements are smaller, then the one closest to the top without having
+  // been scrolled offscreen yet is the active element
+
+  int active = -1;
   float start = 0;
-  if (horizontalMode) {
-    start = scrollContainer.getX();
-  } else {
-    start = scrollContainer.getY();
-  }
-  int active = 0;
-  for (int i = 0; i < elements.size(); i++) {
+
+  if (snapIsFullPage) {
     if (horizontalMode) {
-      start += elements[i]->getWidth();
-      start += ePadding;
-      if (start >= width * .5) {
-        active = i;
-        break;
-      }
+      start = scrollContainer.getX();
     } else {
-      start += elements[i]->getHeight();
-      start += ePadding;
-      if (start >= height * .5) {
-        active = i;
-        break;
+      start = scrollContainer.getY();
+    }
+
+    for (int i = 0; i < elements.size(); i++) {
+      if (horizontalMode) {
+        start += elements[i]->getWidth();
+        start += ePadding;
+        if (start >= width * .5) {
+          active = i;
+          break;
+        }
+      } else {
+        start += elements[i]->getHeight();
+        start += ePadding;
+        if (start >= height * .5) {
+          active = i;
+          break;
+        }
       }
     }
+  }
+
+  else {
+    for (int i = 0; i < elements.size(); i++) {
+      if (horizontalMode) {
+        start += elements[i]->getWidth();
+        start += ePadding;
+        if (start >= -scrollContainer.getX()) {
+          active = i + 1;
+          break;
+        }
+      } else {
+        start += elements[i]->getHeight();
+        start += ePadding;
+        if (start >= -scrollContainer.getY()) {
+          active = i + 1;
+          break;
+        }
+      }
+    }
+  }
+
+  if (active > elements.size()-1) {
+    active = elements.size()-1;
+  }
+
+  if (active == -1 && !snapIsFullPage) {
+    active = elements.size()-1;
   }
 
   return active;

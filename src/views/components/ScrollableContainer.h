@@ -137,6 +137,7 @@ protected:
 
   float ePadding;
   bool snapToElements;
+  bool snapIsFullPage;
   bool horizontalMode;  // scrollbar mode. true= horizontal scroller, false = vertial scroller
   bool enableScrollBar; // user setting
   bool _showScrollBar;  // calculated setting (false if content is smaller than container estate)
