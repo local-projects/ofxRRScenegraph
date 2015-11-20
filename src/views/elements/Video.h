@@ -21,6 +21,12 @@ public:
   void setVideoPointer(ofVideoPlayer *_video);
   ofVideoPlayer *getVideoPointer();
 
+  // TODO Maybe rename these to avoid confusion with BasicScreenObject's
+  // tweened scaleTo() methods?
+  // Also maybe move these into BasicScreenObject?
+  void scaleToWidth(int _width);
+  void scaleToHeight(int _height);
+
   void setRectMode(ofRectMode _mode);
 
   bool isLoaded();

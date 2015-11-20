@@ -61,6 +61,16 @@ void Video::setVideoPointer(ofVideoPlayer *_video) {
   video = _video;
 }
 
+void Video::scaleToWidth(int _width) {
+  float scale = _width / video->getWidth();
+  setSize(scale * getSize());
+}
+
+void Video::scaleToHeight(int _height) {
+  float scale = _height / video->getHeight();
+  setSize(scale * getSize());
+}
+
 void Video::setRectMode(ofRectMode _mode) {
   mode = _mode;
 }
