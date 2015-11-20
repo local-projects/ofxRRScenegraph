@@ -817,6 +817,10 @@ void BasicScreenObject::setSize(float _width, float _height) {
   }
 }
 
+void BasicScreenObject::setSize(ofVec2f _size) {
+  setSize(_size.x, _size.y);
+}
+
 ofVec2f BasicScreenObject::getSize() {
   return ofVec2f(width, height);
 }

@@ -213,6 +213,7 @@ public:
 
   // Size and Scale
   virtual void setSize(float _width, float _height);
+  virtual void setSize(ofVec2f _size);
 
   // Color and Alpha and BlendFactors
   virtual void setAlpha(float _a);
