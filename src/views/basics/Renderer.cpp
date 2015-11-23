@@ -228,6 +228,7 @@ void Renderer::notifyObjects(TouchAction _touchAction) {
 
   BasicInteractiveObject *overobj = (BasicInteractiveObject *)getObjectAt(_touchAction.screenX, _touchAction.screenY);
 
+  // Tell the others we're outside
   for (int i = 0; i < pickingObjects.size(); i++) {
     BasicInteractiveObject *obj = (BasicInteractiveObject *)pickingObjects[i];
     if (obj != NULL && obj != overobj) {
@@ -248,6 +249,7 @@ void Renderer::notifyObjects(TouchAction _touchAction) {
     }
   }
 
+  // Tell the one we're over that we're over
   if (overobj != NULL) {
     switch (_touchAction.action) {
       case (MT_ADD): {
@@ -325,7 +327,7 @@ BasicScreenObject *Renderer::getObjectAt(float _screenx, float _screeny) {
 
   ofColor fboc = ofColor(mapPixels[index], mapPixels[index + 1], mapPixels[index + 2]);
 
-  cout << ofToString(fboc) << endl;
+  // cout << ofToString(fboc) << endl;
 
   // ofColor	fboc			= ofColor( mapPixels[index] , mapPixels[index] , mapPixels[index] );
   GLint pickingName = colorToPickingName(fboc);
