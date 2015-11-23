@@ -410,8 +410,9 @@ void BasicScreenObject::drawForPicking() {
     glPushMatrix();
     glMultMatrixf(getLocalTransformMatrix().getPtr());
 
-    if (hasmask)
+    if (hasmask) {
       setupMask();
+    }
 
     depthtestbefore = glIsEnabled(GL_DEPTH_TEST);
     if (depthtestenabled && !depthtestbefore)
@@ -427,8 +428,9 @@ void BasicScreenObject::drawForPicking() {
     if (!depthtestenabled && depthtestbefore) {
       glEnable(GL_DEPTH_TEST);
     }
-    if (hasmask)
+    if (hasmask) {
       restoreMask();
+    }
     glPopMatrix();
   }
 }
