@@ -26,9 +26,10 @@ ScrollableContainer::ScrollableContainer() {
   scrollContainer.isFilled(false);
   addChild(&scrollContainer);
 
-  scrollBar.setColor(ofColor::grey);
-  scrollBar.setSize(2, 10);
+  scrollBarWidth = 2;
   enableScrollBar = true;
+  scrollBar.setColor(ofColor::grey);
+  scrollBar.setSize(scrollBarWidth, 10);
   addChild(&scrollBar);
 
   setMaskType(MASK_TYPE_CLIPPLANES);
@@ -206,7 +207,7 @@ void ScrollableContainer::_updateLayout(bool tweened) {
   if (horizontalMode) {
     scrollContainer.setSize(contentPos, height);
     scrollBarSize = width / contentPos * width;
-    scrollBar.setSize(scrollBarSize, 2);
+    scrollBar.setSize(scrollBarSize, scrollBarWidth);
     scrollBar.setPosition(0, height - scrollBar.getHeight());
 
     _showScrollBar = ((enableScrollBar) && (contentSize > width));
@@ -218,7 +219,7 @@ void ScrollableContainer::_updateLayout(bool tweened) {
   } else {
     scrollContainer.setSize(width, contentPos);
     scrollBarSize = height / contentPos * height;
-    scrollBar.setSize(2, scrollBarSize);
+    scrollBar.setSize(scrollBarWidth, scrollBarSize);
     scrollBar.setPosition(width - scrollBar.getWidth(), 0);
 
     _showScrollBar = ((enableScrollBar) && (contentSize > height));

@@ -48,6 +48,10 @@ public:
     enableScrollBar = _visible;
   };
 
+  virtual void setScrollBarWidth(float _width) {
+    scrollBarWidth = _width;
+  };
+
   virtual bool isScrollHorizontal() {
     return horizontalMode;
   };
@@ -134,6 +138,7 @@ protected:
 
   float contentSize;
   float scrollBarSize;
+  float scrollBarWidth;
 
   float ePadding;
   bool snapToElements;
