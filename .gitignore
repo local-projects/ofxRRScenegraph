@@ -41,3 +41,5 @@ dwsync.xml
 # svn & cvs
 .svn*
 CVS
+*.suo
+*.sdf
