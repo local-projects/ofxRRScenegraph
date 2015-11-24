@@ -215,6 +215,9 @@ public:
   virtual void setSize(float _width, float _height);
   virtual void setSize(ofVec2f _size);
 
+  virtual void setSizeToWidth(float _width);
+  virtual void setSizeToHeight(float _height);
+
   // Color and Alpha and BlendFactors
   virtual void setAlpha(float _a);
   virtual void setColor(float _r, float _g, float _b);
@@ -298,6 +301,14 @@ public:
   void sizeTo(float _width, float _height, float _time);
   void sizeTo(float _width, float _height, float _time, float (ofxTransitions::*ease)(float, float, float, float));
   void sizeTo(float _width, float _height, float _time, float (ofxTransitions::*ease)(float, float, float, float), float delay);
+
+  void sizeToWidth(float _width, float _time = 0);
+  void sizeToWidth(float _width, float _time, float (ofxTransitions::*ease)(float, float, float, float));
+  void sizeToWidth(float _width, float _time, float (ofxTransitions::*ease)(float, float, float, float), float delay);
+
+  void sizeToHeight(float _height, float _time = 0);
+  void sizeToHeight(float _height, float _time, float (ofxTransitions::*ease)(float, float, float, float));
+  void sizeToHeight(float _height, float _time, float (ofxTransitions::*ease)(float, float, float, float), float delay);
 
   virtual void onTweenComplete(float &param);
 

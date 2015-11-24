@@ -821,6 +821,18 @@ void BasicScreenObject::setSize(ofVec2f _size) {
   setSize(_size.x, _size.y);
 }
 
+void BasicScreenObject::setSizeToWidth(float _width) {
+    float scale = _width / getWidth();
+    float _height = scale * getHeight();
+    setSize(_width, _height);
+}
+
+void BasicScreenObject::setSizeToHeight(float _height) {
+    float scale = _height / getHeight();
+    float _width = scale * getWidth();
+    setSize(_width, _height);
+}
+
 ofVec2f BasicScreenObject::getSize() {
   return ofVec2f(width, height);
 }
@@ -1113,6 +1125,30 @@ void BasicScreenObject::sizeTo(float _width, float _height, float _time, float (
   Tweener.addTween(tweenWidth, _width, _time / 1000.0, ease, delay / 1000.0);
   Tweener.addTween(tweenHeight, _height, _time / 1000.0, ease, delay / 1000.0);
   isSizeTweening = true;
+}
+
+void BasicScreenObject::sizeToWidth(float _width, float _time) {
+  sizeToWidth(_width, _time, &ofxTransitions::easeInOutCubic, 0);
+}
+void BasicScreenObject::sizeToWidth(float _width, float _time, float (ofxTransitions::*ease)(float, float, float, float)) {
+  sizeToWidth(_width, _time, ease, 0);
+}
+void BasicScreenObject::sizeToWidth(float _width, float _time, float (ofxTransitions::*ease)(float, float, float, float), float delay) {
+  float scale = _width / getWidth();
+  float _height = scale * getHeight();
+  sizeTo(_width, _height, _time, ease, delay);
+}
+
+void BasicScreenObject::sizeToHeight(float _height, float _time) {
+  sizeToHeight(_height, _time, &ofxTransitions::easeInOutCubic, 0);
+}
+void BasicScreenObject::sizeToHeight(float _height, float _time, float (ofxTransitions::*ease)(float, float, float, float)) {
+  sizeToHeight(_height, _time, ease, 0);
+}
+void BasicScreenObject::sizeToHeight(float _height, float _time, float (ofxTransitions::*ease)(float, float, float, float), float delay) {
+  float scale = _height / getHeight();
+  float _width = scale * getWidth();
+  sizeTo(_width, _height, _time, ease, delay);
 }
 
 void BasicScreenObject::setMoveAttractionPoint(float _endx, float _endy, float _endz, float _force, float _drag) {
