@@ -302,11 +302,11 @@ public:
   void sizeTo(float _width, float _height, float _time, float (ofxTransitions::*ease)(float, float, float, float));
   void sizeTo(float _width, float _height, float _time, float (ofxTransitions::*ease)(float, float, float, float), float delay);
 
-  void sizeToWidth(float _width, float _time = 0);
+  void sizeToWidth(float _width, float _time);
   void sizeToWidth(float _width, float _time, float (ofxTransitions::*ease)(float, float, float, float));
   void sizeToWidth(float _width, float _time, float (ofxTransitions::*ease)(float, float, float, float), float delay);
 
-  void sizeToHeight(float _height, float _time = 0);
+  void sizeToHeight(float _height, float _time);
   void sizeToHeight(float _height, float _time, float (ofxTransitions::*ease)(float, float, float, float));
   void sizeToHeight(float _height, float _time, float (ofxTransitions::*ease)(float, float, float, float), float delay);
 
