@@ -15,6 +15,7 @@ Video::Video() {
 
 Video::~Video() {
   video->close();
+  delete video;
 }
 
 void Video::update() {
@@ -32,8 +33,10 @@ void Video::_draw() {
 }
 
 void Video::load(string _filename) {
-  video->close();
-  delete video;
+  if (video) {
+    video->close();
+    delete video;
+  }
   video = new ofVideoPlayer();
 
   video->load(_filename);
