@@ -348,6 +348,8 @@ void ScrollableContainer::onManualScrollStop(MultiTouchEvent &_event) {
 void ScrollableContainer::_handleRelease() {
   if (snapToElements == true) {
     if (snapWhileScrolling && isSnappingToElement) return;
+    // todo need another check here for whether the user let go AFTER a snap
+    // happened & finished, in which case we should ignore it (similar to above)
 
     if (_swiped) {
       scrollToElement(_activeElementNr, snapToElementsTime);
@@ -419,8 +421,12 @@ void ScrollableContainer::onSwipeLeft(MultiTouchEvent &_event) {
 void ScrollableContainer::onSnapFinished(BasicScreenObjectEvent &event) {
   if (snapToElements && snapWhileScrolling) { // isSnappingToElement) {
     isSnappingToElement = false;
-    scrollContainer.isDraggable(true);
-    scrollContainer.isSingleTouchDraggable(true);
+    if (scrollContainer.getActiveMultiTouches()->size()) {
+    } else {
+      ofLogNotice() << "onSnapFinished: enabling draggable b/c there are no touches";
+      scrollContainer.isDraggable(true);
+      scrollContainer.isSingleTouchDraggable(true);
+    }
   }
 }
 
@@ -479,6 +485,15 @@ void ScrollableContainer::onContentTouchDown(MultiTouchEvent &event) {
 }
 
 void ScrollableContainer::onContentTouchUp(MultiTouchEvent &event) {
+  if (snapToElements && snapWhileScrolling) {
+    if (!isSnappingToElement) {
+      ofLogNotice() << "onContentTouchUp: enabling draggable b/c snap finished";
+      scrollContainer.isDraggable(true);
+      scrollContainer.isSingleTouchDraggable(true);
+    } else {
+      ofLogNotice() << "onContentTouchUp: NOT enabling draggable b/c content is still snapping";
+    }
+  }
   _handleRelease();
   ofNotifyEvent(elementLastTouchUpEvent, myEventArgs, this);
 }
