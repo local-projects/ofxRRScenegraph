@@ -66,6 +66,13 @@ public:
     snapToElements = _snap;
   };
 
+  virtual bool getSnapWhileScrolling() {
+    return snapWhileScrolling;
+  };
+  virtual void setSnapWhileScrolling(bool _snap) {
+    snapWhileScrolling = _snap;
+  };
+
   virtual float getElementPadding() {
     return ePadding;
   };
@@ -148,13 +155,15 @@ protected:
   float scrollBarWidth;
 
   float ePadding;
-  bool snapToElements;
-  bool snapIsFullPage;
+  bool snapToElements;  // will snap to an element when the touch is removed
+  bool snapWhileScrolling; // will snap to an element while scrolling. very similar to common web interactions
+  bool snapIsFullPage;  // calculated internal setting for whether contents are smaller than scroll container
   bool horizontalMode;  // scrollbar mode. true= horizontal scroller, false = vertial scroller
   bool enableScrollBar; // user setting
   bool _showScrollBar;  // calculated setting (false if content is smaller than container estate)
   int _activeElementNr;
   bool elementChangedWhileDragging; // true if container was manually dragged to a different element (ignore swipe in this case)
+  bool isSnappingToElement; // internal
   bool scrollStabToStop;  // user setting
 
   bool _swiped;

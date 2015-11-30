@@ -7,6 +7,8 @@ ScrollableContainer::ScrollableContainer() {
   _activeElementNr = 0;
   horizontalMode = false;
   snapToElements = false;
+  snapWhileScrolling = false;
+  isSnappingToElement = false;
   _swiped = false;
   elementChangedWhileDragging = false;
 
@@ -292,14 +294,21 @@ int ScrollableContainer::_findActiveElement() {
         start += elements[i]->getWidth();
         start += ePadding;
         if (start >= -scrollContainer.getX()) {
-          active = i + 1;
+          if (scrollContainer.getDragSpeed().x < 0)
+            active = i + 1;
+          else
+            active = i;
           break;
         }
       } else {
         start += elements[i]->getHeight();
         start += ePadding;
+        // check if we're dragging up (speed > 0) or down (speed < 0)
         if (start >= -scrollContainer.getY()) {
-          active = i + 1;
+          if (scrollContainer.getDragSpeed().y < 0)
+            active = i + 1;
+          else
+            active = i;
           break;
         }
       }
@@ -321,6 +330,14 @@ void ScrollableContainer::_handleActiveElementChange() {
   BasicScreenObjectEvent event(elements[_activeElementNr]);
   ofNotifyEvent(activeElementChangedEvent, event, this);
   // ofLog(OF_LOG_NOTICE, ofToString(_activeElementNr));
+  if (snapToElements && snapWhileScrolling && !isSnappingToElement) {
+    // turn draggability of the container off while it snaps to a piece of
+    // content. this gets turned back on when the snap finishes
+    isSnappingToElement = true;
+    scrollContainer.isDraggable(false);
+    scrollContainer.isSingleTouchDraggable(false);
+    scrollToElement(_activeElementNr, snapToElementsTime);
+  }
 }
 
 void ScrollableContainer::onManualScrollStop(MultiTouchEvent &_event) {
@@ -330,6 +347,8 @@ void ScrollableContainer::onManualScrollStop(MultiTouchEvent &_event) {
 
 void ScrollableContainer::_handleRelease() {
   if (snapToElements == true) {
+    if (snapWhileScrolling && isSnappingToElement) return;
+
     if (_swiped) {
       scrollToElement(_activeElementNr, snapToElementsTime);
     } else {
@@ -398,6 +417,11 @@ void ScrollableContainer::onSwipeLeft(MultiTouchEvent &_event) {
 }
 
 void ScrollableContainer::onSnapFinished(BasicScreenObjectEvent &event) {
+  if (snapToElements && snapWhileScrolling) { // isSnappingToElement) {
+    isSnappingToElement = false;
+    scrollContainer.isDraggable(true);
+    scrollContainer.isSingleTouchDraggable(true);
+  }
 }
 
 void ScrollableContainer::onContentsMoved(BasicScreenObjectEvent &event) {
