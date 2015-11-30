@@ -450,7 +450,7 @@ void ScrollableContainer::onContentTouchDown(MultiTouchEvent &event) {
     ofNotifyEvent(elementFirstTouchDownEvent, tapEvent, this);
   }
 
-  if (bStabToStop)
+  if (scrollStabToStop)
     scrollContainer.setSpeed(0, 0, 0);
 }
 
