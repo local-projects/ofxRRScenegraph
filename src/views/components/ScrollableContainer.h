@@ -74,6 +74,13 @@ public:
     _updateLayout();
   };
 
+  virtual bool getStabToStop() {
+    return bStabToStop;
+  }
+  virtual void setStabToStop(bool stab) {
+    bStabToStop = stab;
+  }
+
   // Timings
   virtual void setDefaultTiming(float _atime, float _dtime) {
     defaultAppearTime = _atime;
@@ -148,6 +155,7 @@ protected:
   bool _showScrollBar;  // calculated setting (false if content is smaller than container estate)
   int _activeElementNr;
   bool elementChangedWhileDragging; // true if container was manually dragged to a different element (ignore swipe in this case)
+  bool bStabToStop;
 
   bool _swiped;
 

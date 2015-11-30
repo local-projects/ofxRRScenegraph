@@ -449,6 +449,9 @@ void ScrollableContainer::onContentTouchDown(MultiTouchEvent &event) {
     BasicScreenObjectEvent tapEvent(hitElement);
     ofNotifyEvent(elementFirstTouchDownEvent, tapEvent, this);
   }
+
+  if (bStabToStop)
+    scrollContainer.setSpeed(0, 0, 0);
 }
 
 void ScrollableContainer::onContentTouchUp(MultiTouchEvent &event) {
