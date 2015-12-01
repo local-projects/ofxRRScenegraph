@@ -121,6 +121,8 @@ public:
   virtual int getElementCount() {
     return elements.size();
   };
+  virtual BasicScreenObject* getElementBefore(BasicScreenObject *_element);
+  virtual BasicScreenObject* getElementAfter(BasicScreenObject *_element);
 
   ofEvent<BasicScreenObjectEvent> activeElementChangedEvent;
   ofEvent<BasicScreenObjectEvent> elementTapEvent;

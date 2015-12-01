@@ -116,6 +116,27 @@ void ScrollableContainer::scrollToElement(int _elementNr, int _speed) {
   }
 }
 
+BasicScreenObject* ScrollableContainer::getElementBefore(BasicScreenObject *_element) {
+  for (int i = 0; i < elements.size(); i++) {
+    if (elements[i] == _element) {
+      // if the first element was passed in, there is no element before it!
+      if (i == 0) return nullptr;
+      // otherwise return the previous one
+      else return elements[i-1];
+    }
+  }
+}
+BasicScreenObject* ScrollableContainer::getElementAfter(BasicScreenObject *_element) {
+  for (int i = 0; i < elements.size(); i++) {
+    if (elements[i] == _element) {
+      // if the last element was passed in, there is no element after it!
+      if (i == elements.size()-1) return nullptr;
+      // otherwise return the next one one
+      else return elements[i+1];
+    }
+  }
+}
+
 void ScrollableContainer::addElement(BasicScreenObject *_element) {
   if (std::find(elements.begin(), elements.end(), _element) == elements.end()) {
     elements.push_back(_element);
