@@ -169,6 +169,7 @@ protected:
   bool scrollStabToStop;  // user setting
 
   bool _swiped;
+  float dragStartPos;
 
   vector<BasicScreenObject *> elements;
 
