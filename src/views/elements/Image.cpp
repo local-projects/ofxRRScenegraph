@@ -15,7 +15,9 @@ Image::Image() {
 }
 
 Image::~Image() {
-  img->clear();
+  if (!imagePointerSetExternally) {
+    img->clear();
+  }
 }
 
 void Image::update() {
@@ -168,9 +170,18 @@ void Image::clear() {
 }
 
 void Image::setImagePointer(ofImage *_img) {
+  if (img != nullptr && !imagePointerSetExternally) {
+    delete img;
+  }
+
   img = _img;
   changed = true;
   loaded = true;
+  imagePointerSetExternally = true;
+
+  if (img != nullptr) {
+    setSize(img->getWidth(), img->getHeight());
+  }
 }
 
 /**
