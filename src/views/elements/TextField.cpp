@@ -39,6 +39,8 @@ void TextField::update() {
 }
 
 void TextField::_draw() {
+  if (!textImage.isAllocated()) return;
+  
   // TODO: find a solution here... sometimes text-alpha is not properly blended
   ofSetColor(getCombinedAlpha(), getCombinedAlpha(), getCombinedAlpha(), getCombinedAlpha());
   glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA); // To avoid ugly dark eges in alpha blending
