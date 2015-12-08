@@ -485,7 +485,7 @@ void ScrollableContainer::onContentsMoved(BasicScreenObjectEvent &event) {
       newActiveElementNr = MAX(newActiveElementNr, 0);
     } else if (delta < -threshold) {
       newActiveElementNr++;
-      newActiveElementNr = MIN(newActiveElementNr, getElementCount());
+      newActiveElementNr = MIN(newActiveElementNr, elements.size() - 1);
     }
 
     // TODO if elements are smaller than the scroll container, than you won't be
