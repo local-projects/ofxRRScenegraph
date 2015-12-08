@@ -495,7 +495,7 @@ void ScrollableContainer::onContentsMoved(BasicScreenObjectEvent &event) {
       scrollContainer.isDraggable(false);
       scrollContainer.isSingleTouchDraggable(false);
 
-      scrollToElement(_activeElementNr);
+      scrollToElement(_activeElementNr, snapToElementsTime);
       _handleActiveElementChange();
     }
   } else {
