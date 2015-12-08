@@ -401,6 +401,7 @@ void ScrollableContainer::onManualScrollStart(MultiTouchEvent &_event) {
 void ScrollableContainer::onSwipeUp(MultiTouchEvent &_event) {
 
   if (snapToElements == true) {
+    if (snapWhileScrolling) return;
     if (horizontalMode == false && elementChangedWhileDragging == false && !scrollContainer.isMoveTweenActive()) {
       if (_activeElementNr < elements.size() - 1) {
         _swiped = true;
@@ -413,6 +414,7 @@ void ScrollableContainer::onSwipeUp(MultiTouchEvent &_event) {
 void ScrollableContainer::onSwipeDown(MultiTouchEvent &_event) {
 
   if (snapToElements == true) {
+    if (snapWhileScrolling) return;
     if (horizontalMode == false && elementChangedWhileDragging == false && !scrollContainer.isMoveTweenActive()) {
       if (_activeElementNr > 0) {
         _swiped = true;
@@ -425,6 +427,7 @@ void ScrollableContainer::onSwipeDown(MultiTouchEvent &_event) {
 void ScrollableContainer::onSwipeRight(MultiTouchEvent &_event) {
 
   if (snapToElements == true) {
+    if (snapWhileScrolling) return;
     if (horizontalMode == true && elementChangedWhileDragging == false && !scrollContainer.isMoveTweenActive()) {
       if (_activeElementNr > 0) {
         _swiped = true;
@@ -437,6 +440,7 @@ void ScrollableContainer::onSwipeRight(MultiTouchEvent &_event) {
 void ScrollableContainer::onSwipeLeft(MultiTouchEvent &_event) {
 
   if (snapToElements == true) {
+    if (snapWhileScrolling) return;
     if (horizontalMode == true && elementChangedWhileDragging == false && !scrollContainer.isMoveTweenActive()) {
       if (_activeElementNr < elements.size() - 1) {
         _swiped = true;
