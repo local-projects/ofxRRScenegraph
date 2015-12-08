@@ -24,6 +24,13 @@ TextField::TextField() {
   setAntialiasType(CAIRO_ANTIALIAS_DEFAULT);
 }
 
+TextField::~TextField() {
+  if (pango) delete pango;
+  if (context) delete context;
+  if (layout) delete layout;
+  if (fd) delete fd;
+}
+
 void TextField::setup() {
   if (layout != NULL)
     delete layout;

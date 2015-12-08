@@ -28,7 +28,7 @@
 class TextField : public BasicScreenObject {
 public:
   TextField();
-  virtual ~TextField(){};
+  virtual ~TextField();
 
   void setup();
   void update();
