@@ -60,6 +60,7 @@ public:
 
   BasicScreenObject *getObjectAt(float _screenx, float _screeny);
   GLuint getNextPickingName(BasicInteractiveObject *_object);
+  void removePickingObject(BasicInteractiveObject *_object);
 
   ofCamera *getCamera() {
     return &camera;
@@ -154,6 +155,7 @@ protected:
 
   GLuint nextPickingName;
   map<GLuint, BasicInteractiveObject *> pickingObjects;
+  bool removePickingObjects;
 
   int port;
   int maxcursors;

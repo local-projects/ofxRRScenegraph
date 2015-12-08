@@ -20,6 +20,7 @@ Renderer::Renderer() {
   isRenderer = true;
   _isAddedToRenderer = true;
   drawcursors = true;
+  removePickingObjects = true;
 
   idleEventFired = false;
   idleTimeout = 30000; // 30 seconds
@@ -237,6 +238,7 @@ void Renderer::notifyObjects(TouchAction _touchAction) {
 
   BasicInteractiveObject *overobj = (BasicInteractiveObject *)getObjectAt(_touchAction.screenX, _touchAction.screenY);
 
+  ofLogNotice("Renderer") << "notifyObjects: pickingObjects size: " << pickingObjects.size();
   for (int i = 0; i < pickingObjects.size(); i++) {
     BasicInteractiveObject *obj = (BasicInteractiveObject *)pickingObjects[i];
     if (obj != NULL && obj != overobj) {
@@ -350,6 +352,18 @@ GLuint Renderer::getNextPickingName(BasicInteractiveObject *_object) {
   GLuint np = ++nextPickingName;
   pickingObjects[np] = _object;
   return np;
+}
+
+void Renderer::removePickingObject(BasicInteractiveObject *_object) {
+  // this was added to avoid crashes in notifyObjects() where objects that have
+  // been removed were still trying to get drawn in the picking loop. hopefully
+  // this resolves it! set removePickingObjects = false to disable this
+  if (!removePickingObjects) return;
+
+  GLint pickingName = _object->getPickingName();
+  if (pickingObjects.find(pickingName) != pickingObjects.end()) {
+    pickingObjects.erase(pickingName);
+  }
 }
 
 long Renderer::getLastInteractionMillis() {

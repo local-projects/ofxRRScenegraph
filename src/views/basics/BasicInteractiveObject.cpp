@@ -69,8 +69,9 @@ BasicInteractiveObject::BasicInteractiveObject() {
 }
 
 BasicInteractiveObject::~BasicInteractiveObject() {
-
-  // TODO: remove from Renderer List?
+  if (root->getName() == "Renderer") {
+    if (this != root) ((Renderer *) root)->removePickingObject(this);
+  }
 
   ofRemoveListener(firstTouchDownEvent, this, &BasicInteractiveObject::onFirstTouchDown);
   ofRemoveListener(lastTouchUpEvent, this, &BasicInteractiveObject::onLastTouchUp);

@@ -73,6 +73,9 @@ public:
   string getName() {
     return myname;
   };
+  GLint getPickingName() {
+    return pickingName;
+  }
 
   void setId(int _id) {
     myid = _id;
