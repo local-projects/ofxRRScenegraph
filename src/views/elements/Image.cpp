@@ -15,7 +15,7 @@ Image::Image() {
 }
 
 Image::~Image() {
-  if (!imagePointerSetExternally) {
+  if (!pointerSetExternally) {
     img->clear();
   }
 }
@@ -65,6 +65,7 @@ void Image::load(string _filename) {
   setSize(img->getWidth(), img->getHeight());
   changed = true;
   loaded = true;
+  pointerSetExternally = false;
   ofNotifyEvent(imageLoadedEvent, myEventArgs, this);
   tmpFilepath = _filename;
 }
@@ -72,6 +73,7 @@ void Image::load(string _filename) {
 void Image::loadAsyncFromDisk(string _filename, ofxThreadedImageLoader *loader) {
   loadingAsync = true;
   loaded = false;
+  pointerSetExternally = false;
   if (loadingPlaceholder != NULL) {
     loadingPlaceholder->isVisible(true);
   }
@@ -83,6 +85,7 @@ void Image::loadAsyncFromDisk(string _filename, ofxThreadedImageLoader *loader) 
 void Image::loadAsyncFromURL(string _url, ofxThreadedImageLoader *loader) {
   loadingAsync = true;
   loaded = false;
+  pointerSetExternally = false;
   if (loadingPlaceholder != NULL) {
     loadingPlaceholder->isVisible(true);
   }
@@ -170,14 +173,14 @@ void Image::clear() {
 }
 
 void Image::setImagePointer(ofImage *_img) {
-  if (img != nullptr && !imagePointerSetExternally) {
+  if (img != nullptr && !pointerSetExternally) {
     delete img;
   }
 
   img = _img;
   changed = true;
   loaded = true;
-  imagePointerSetExternally = true;
+  pointerSetExternally = true;
 
   if (img != nullptr) {
     setSize(img->getWidth(), img->getHeight());

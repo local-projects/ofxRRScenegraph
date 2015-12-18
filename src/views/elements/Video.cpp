@@ -15,7 +15,9 @@ Video::Video() {
 
 Video::~Video() {
   video->close();
-  delete video;
+  if (!pointerSetExternally) {
+    delete video;
+  }
 }
 
 void Video::update() {
@@ -35,7 +37,9 @@ void Video::_draw() {
 void Video::load(string _filename) {
   if (video) {
     video->close();
-    delete video;
+    if (!pointerSetExternally) {
+      delete video;
+    }
   }
   video = new ofVideoPlayer();
 
@@ -44,6 +48,7 @@ void Video::load(string _filename) {
   setSize(video->getWidth(), video->getHeight());
   ofNotifyEvent(videoLoadedEvent, myEventArgs, this);
   tmpFilepath = _filename;
+  pointerSetExternally = false;
 }
 
 ofVideoPlayer *Video::getVideoPointer() {
@@ -62,6 +67,9 @@ void Video::close() {
 
 void Video::setVideoPointer(ofVideoPlayer *_video) {
   video = _video;
+  pointerSetExternally = true;
+  video->play();
+  setSize(video->getWidth(), video->getHeight());
 }
 
 void Video::setRectMode(ofRectMode _mode) {

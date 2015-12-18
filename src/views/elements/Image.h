@@ -77,7 +77,7 @@ private:
   bool isUpdateReal;
   bool loaded;
   bool loadingAsync;
-  bool imagePointerSetExternally;
+  bool pointerSetExternally;
 
   ofRectMode mode;
 

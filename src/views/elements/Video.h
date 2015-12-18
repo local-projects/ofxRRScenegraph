@@ -35,6 +35,7 @@ private:
   ofVideoPlayer *video;
 
   ofRectMode mode;
+  bool pointerSetExternally;
 
   string tmpFilepath;
 };
