@@ -91,11 +91,6 @@ void Renderer::update() {
         camera.begin();
       }
 
-      // TODO solve this weird offset!!
-      // Maybe coming from the window border?!
-
-      ofTranslate(0, 0, -25);
-
       BasicScreenObject::drawForPicking();
       if (cameraenabled) {
         camera.end();
@@ -238,7 +233,6 @@ void Renderer::notifyObjects(TouchAction _touchAction) {
 
   BasicInteractiveObject *overobj = (BasicInteractiveObject *)getObjectAt(_touchAction.screenX, _touchAction.screenY);
 
-  ofLogNotice("Renderer") << "notifyObjects: pickingObjects size: " << pickingObjects.size();
   for (int i = 0; i < pickingObjects.size(); i++) {
     BasicInteractiveObject *obj = (BasicInteractiveObject *)pickingObjects[i];
     if (obj != NULL && obj != overobj) {
