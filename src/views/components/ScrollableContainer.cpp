@@ -164,6 +164,7 @@ void ScrollableContainer::clearElements() {
     scrollContainer.removeChild(elements[i]);
   }
   elements.clear();
+  _activeElementNr = 0;
   scrollToElement(0, 1);
   _updateLayout();
 }
