@@ -69,7 +69,7 @@ BasicInteractiveObject::BasicInteractiveObject() {
 }
 
 BasicInteractiveObject::~BasicInteractiveObject() {
-  if (root->getName() == "Renderer") {
+  if (root && root->getName() == "Renderer") {
     if (this != root) ((Renderer *) root)->removePickingObject(this);
   }
 
