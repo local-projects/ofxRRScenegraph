@@ -5,6 +5,7 @@ BasicButton::BasicButton() {
   _isSelected = false;
   hasActiveimage = false;
   _isScalingImage = false;
+  _isCircle = false;
 
   temp = NULL;
   normal = NULL;
@@ -32,7 +33,10 @@ void BasicButton::onLastTouchUp(MultiTouchEvent &_event) {
 
 void BasicButton::_draw() {
   if (normal == NULL) {
-    ofDrawRectangle(0, 0, width, height);
+    if (_isCircle)
+      ofDrawCircle(0, 0, width, height);
+    else
+      ofDrawRectangle(0, 0, width, height);
   }
 
   if (currentImage != NULL) {
@@ -43,6 +47,13 @@ void BasicButton::_draw() {
       currentImage->draw((width - currentImage->getWidth()) * .5, (height - currentImage->getHeight()) * .5);
     }
   }
+}
+
+void BasicButton::_drawForPicking() {
+  if (_isCircle)
+    ofDrawCircle(0, 0, width, height);
+  else
+    ofDrawRectangle(0, 0, width, height);
 }
 
 void BasicButton::setImage(ofImage *_normal, ofImage *_selected, ofImage *_active, ofImage *_disabled) {
