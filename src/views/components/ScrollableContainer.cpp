@@ -109,6 +109,13 @@ void ScrollableContainer::scrollToElement(int _elementNr, int _speed) {
     pos += ePadding;
   }
 
+  // If speed is 0 then we want to jump directly to the new element
+  // Set the active element here *before* calling moveTo() so that no callbacks
+  // related to the active element changing get triggered
+  if (_speed == 0) {
+    _activeElementNr = _elementNr;
+  }
+
   if (horizontalMode) {
     scrollContainer.moveTo(-pos, scrollContainer.getY(), scrollContainer.getZ(), _speed, &ofxTransitions::easeOutQuint);
   } else {
