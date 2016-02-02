@@ -35,6 +35,12 @@ public:
   virtual bool isFilled() {
     return _isFilled;
   };
+  virtual void isStroked(bool stroked) {
+    _isStroked = stroked;
+  };
+  virtual bool isStroked() {
+    return _isStroked;
+  };
   virtual void setStrokeWidth(float _sWidth) {
     _strokeWidth = _sWidth;
   };
@@ -49,6 +55,7 @@ public:
 
 protected:
   bool _isFilled;
+  bool _isStroked;
   float _strokeWidth;
   ofColor _strokeColor;
 };

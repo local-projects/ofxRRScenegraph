@@ -16,11 +16,12 @@ void ShapeRect::_draw() {
 
   ofDrawRectangle(0, 0, width, height);
 
-  ofSetLineWidth(_strokeWidth);
-  ofNoFill();
-  ofSetColor(_strokeColor, getCombinedAlpha());
-
-  ofDrawRectangle(0, 0, width, height);
+  if (_isStroked) {
+    ofSetLineWidth(_strokeWidth);
+    ofNoFill();
+    ofSetColor(_strokeColor, getCombinedAlpha());
+    ofDrawRectangle(0, 0, width, height);
+  }
 
   ofPopStyle();
 }
