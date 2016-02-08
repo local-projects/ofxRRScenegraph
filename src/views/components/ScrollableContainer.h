@@ -124,6 +124,10 @@ public:
   virtual BasicScreenObject* getElementBefore(BasicScreenObject *_element);
   virtual BasicScreenObject* getElementAfter(BasicScreenObject *_element);
 
+  InteractiveContainer& getScrollContainer() {
+    return scrollContainer;
+  }
+
   ofEvent<BasicScreenObjectEvent> activeElementChangedEvent;
   ofEvent<BasicScreenObjectEvent> elementTapEvent;
   ofEvent<BasicScreenObjectEvent> elementFirstTouchDownEvent;
