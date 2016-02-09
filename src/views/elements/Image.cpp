@@ -5,6 +5,7 @@ Image::Image() {
   changed = false;
   isUpdateReal = false;
   img = new ofImage();
+  tex = NULL;
   loaded = false;
   loadingAsync = false;
   loadingPlaceholder = NULL;
@@ -16,7 +17,8 @@ Image::Image() {
 
 Image::~Image() {
   if (!pointerSetExternally) {
-    img->clear();
+    if (img != NULL) delete img;
+    if (tex != NULL) delete tex;
   }
 }
 
@@ -41,14 +43,20 @@ void Image::update() {
 }
 
 void Image::_draw() {
-  if (img == NULL || loadingAsync)
+  if (loadingAsync || (img == NULL && tex == NULL))
     return;
 
   if (img->getWidth() > 0) {
     ofPushStyle();
-
     ofSetRectMode(mode);
     img->draw(0, 0, width, height);
+    ofPopStyle();
+  }
+
+  if (tex && tex->getWidth() > 0) {
+    ofPushStyle();
+    ofSetRectMode(mode);
+    tex->draw(0, 0, width, height);
     ofPopStyle();
   }
   /*
@@ -60,7 +68,8 @@ void Image::_draw() {
 }
 
 void Image::load(string _filename) {
-  img->clear();
+  clear();
+
   img->load(_filename);
   setSize(img->getWidth(), img->getHeight());
   changed = true;
@@ -101,10 +110,6 @@ void Image::setLoadingPlaceholder(BasicScreenObject *_loadingPlaceholder) {
   addChild(loadingPlaceholder);
   loadingPlaceholder->setPosition((width - loadingPlaceholder->getWidth()) / 2.0, (height - loadingPlaceholder->getHeight()) / 2.0);
   loadingPlaceholder->isVisible(false);
-}
-
-ofImage *Image::getImagePointer() {
-  return img;
 }
 
 void Image::setSize(float _width, float _height) {
@@ -167,24 +172,45 @@ bool Image::isLoaded() {
 }
 
 void Image::clear() {
-  if (loaded && img != NULL) {
-    img->clear();
+  if (pointerSetExternally) return;
+
+  if (loaded) {
+    if (img != NULL) img->clear();
+    if (tex != NULL) tex->clear();
   }
 }
 
 void Image::setImagePointer(ofImage *_img) {
-  if (img != nullptr && !pointerSetExternally) {
-    delete img;
-  }
+  clear();
 
   img = _img;
   changed = true;
   loaded = true;
   pointerSetExternally = true;
 
-  if (img != nullptr) {
+  if (img != NULL) {
     setSize(img->getWidth(), img->getHeight());
   }
+}
+
+void Image::setTexturePointer(ofTexture *_tex) {
+  clear();
+
+  tex = _tex;
+  loaded = true;
+  pointerSetExternally = true;
+
+  if (tex != NULL) {
+    setSize(tex->getWidth(), tex->getHeight());
+  }
+}
+
+ofImage *Image::getImagePointer() {
+  return img;
+}
+
+ofTexture *Image::getTexturePointer() {
+  return tex;
 }
 
 /**

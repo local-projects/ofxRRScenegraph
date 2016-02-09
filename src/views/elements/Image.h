@@ -41,6 +41,9 @@ public:
   void setImagePointer(ofImage *_img);
   ofImage *getImagePointer();
 
+  void setTexturePointer(ofTexture *_tex);
+  ofTexture *getTexturePointer();
+
   void setSize(float _width, float _height);
   void updateRealImageSize();
   void isUpdateRealImageSize(bool _isupdatereal) {
@@ -67,6 +70,7 @@ protected:
 
 private:
   ofImage *img;
+  ofTexture *tex;
   BasicScreenObject *loadingPlaceholder;
 
   float maxWidth;
