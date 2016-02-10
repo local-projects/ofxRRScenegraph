@@ -41,6 +41,7 @@ public:
   virtual void onStartMultiTouchScope(MultiTouchEvent &_event){};
 
   virtual void setImage(ofImage *_normal, ofImage *_selected = NULL, ofImage *_active = NULL, ofImage *_disabled = NULL);
+  virtual void setImage(ofTexture *_normal, ofTexture *_selected = NULL, ofTexture *_active = NULL, ofTexture *_disabled = NULL);
   virtual void toggle();
   virtual void select();
   virtual void deselect();
@@ -66,12 +67,12 @@ protected:
   virtual void _drawForPicking();
 
   string mytxt;
-  ofImage *currentImage;
-  ofImage *active;
-  ofImage *normal;
-  ofImage *selected;
-  ofImage *disabled;
-  ofImage *temp;
+  ofTexture *currentImage;
+  ofTexture *active;
+  ofTexture *normal;
+  ofTexture *selected;
+  ofTexture *disabled;
+  ofTexture *temp;
 
   bool isEnabled;
   bool _isSelected;

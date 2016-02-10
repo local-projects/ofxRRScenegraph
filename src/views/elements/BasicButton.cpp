@@ -58,6 +58,21 @@ void BasicButton::_drawForPicking() {
 
 void BasicButton::setImage(ofImage *_normal, ofImage *_selected, ofImage *_active, ofImage *_disabled) {
 
+  ofTexture *normalTex = NULL;
+  ofTexture *selectedTex = NULL;
+  ofTexture *activeTex = NULL;
+  ofTexture *disabledTex = NULL;
+
+  if (_normal) normalTex = &_normal->getTexture();
+  if (_selected) selectedTex = &_selected->getTexture();
+  if (_active) disabledTex = &_active->getTexture();
+  if (_disabled) disabledTex = &_disabled->getTexture();
+
+  setImage(normalTex, selectedTex, activeTex, disabledTex);
+}
+
+void BasicButton::setImage(ofTexture *_normal, ofTexture *_selected, ofTexture *_active, ofTexture *_disabled) {
+
   normal = _normal;
   selected = _selected;
 
