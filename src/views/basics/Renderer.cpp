@@ -21,6 +21,7 @@ Renderer::Renderer() {
   _isAddedToRenderer = true;
   drawcursors = true;
   removePickingObjects = true;
+  bDrawDebug = false;
 
   idleEventFired = false;
   idleTimeout = 30000; // 30 seconds

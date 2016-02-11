@@ -363,8 +363,20 @@ void BasicScreenObject::draw() {
 
     ofPushMatrix();
     ofPushStyle();
+
     ofSetColor(color.r, color.g, color.b, getCombinedAlpha());
     _draw();
+
+    if (((Renderer*) getRoot())->isDrawDebug()) {
+      ofNoFill();
+      ofSetColor(ofColor(255, 0.5f * 255));
+      ofSetLineWidth(1);
+      ofDrawRectangle(0, 0, width, height);
+
+      ofSetColor(255);
+      ofDrawBitmapString(myname, 0, 20);
+    }
+
     ofPopStyle();
     ofPopMatrix();
 

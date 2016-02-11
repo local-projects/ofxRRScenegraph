@@ -58,6 +58,13 @@ public:
   void setCursorSize(float _cursorsize);
   void isDrawCursors(bool _dracursors);
 
+  void isDrawDebug(bool _drawdebug) {
+    bDrawDebug = _drawdebug;
+  };
+  bool isDrawDebug() {
+    return bDrawDebug;
+  };
+
   BasicScreenObject *getObjectAt(float _screenx, float _screeny);
   GLuint getNextPickingName(BasicInteractiveObject *_object);
   void removePickingObject(BasicInteractiveObject *_object);
@@ -122,6 +129,7 @@ public:
 protected:
   bool bTuioSetup;
   bool bColorPickerSetup;
+  bool bDrawDebug;
 
   void setup();
   void _draw(){};
