@@ -6,6 +6,7 @@ BasicButton::BasicButton() {
   hasActiveimage = false;
   _isScalingImage = false;
   _isCircle = false;
+  _isFilled = true;
 
   temp = NULL;
   normal = NULL;
@@ -32,7 +33,7 @@ void BasicButton::onLastTouchUp(MultiTouchEvent &_event) {
 }
 
 void BasicButton::_draw() {
-  if (normal == NULL) {
+  if (normal == NULL && _isFilled) {
     if (_isCircle)
       ofDrawCircle(0, 0, width, height);
     else

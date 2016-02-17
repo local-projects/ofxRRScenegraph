@@ -53,12 +53,20 @@ public:
   virtual bool isScalingImage() {
     return _isScalingImage;
   };
+  
 	virtual void isCircle(bool circle) {
 		_isCircle = circle;
 	};
 	virtual bool isCircle() {
 		return _isCircle;
 	};
+
+  bool isFilled() {
+    return _isFilled;
+  };
+  void isFilled(bool _filled) {
+    _isFilled = _filled;
+  };
 
   bool isSelected();
 
@@ -79,4 +87,5 @@ protected:
   bool hasActiveimage;
   bool _isScalingImage;
   bool _isCircle;
+  bool _isFilled;
 };
