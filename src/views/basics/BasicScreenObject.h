@@ -220,8 +220,11 @@ public:
 
   virtual void setSizeToWidth(float _width);
   virtual void setSizeToHeight(float _height);
-  virtual void setSizeToRect(BasicScreenObject *_object, ofScaleMode mode = OF_SCALEMODE_FIT);
+  virtual void setSizeToObject(BasicScreenObject *_object, ofScaleMode mode = OF_SCALEMODE_FIT);
   virtual void setSizeToRect(float _width, float _height, ofScaleMode mode = OF_SCALEMODE_FIT);
+
+  virtual void centerInObject(BasicScreenObject *_object);
+  virtual void centerInRect(ofRectangle targetRect);
 
   // Color and Alpha and BlendFactors
   virtual void setAlpha(float _a);

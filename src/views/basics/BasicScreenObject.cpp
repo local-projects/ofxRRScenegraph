@@ -845,7 +845,7 @@ void BasicScreenObject::setSizeToHeight(float _height) {
     setSize(_width, _height);
 }
 
-void BasicScreenObject::setSizeToRect(BasicScreenObject *_object, ofScaleMode mode) {
+void BasicScreenObject::setSizeToObject(BasicScreenObject *_object, ofScaleMode mode) {
   setSizeToRect(_object->getWidth(), _object->getHeight(), mode);
 }
 
@@ -855,9 +855,17 @@ void BasicScreenObject::setSizeToRect(float _width, float _height, ofScaleMode m
   myRect.scaleTo(scaleTo, mode);
 
   setSize(myRect.width, myRect.height);
-  float x = (_width - getWidth()) / 2.;
-  float y = (_height - getHeight()) / 2.;
-  setPosition(x, y);
+}
+
+void BasicScreenObject::centerInObject(BasicScreenObject *_object) {
+  ofRectangle rect = ofRectangle(_object->getPosition(), _object->getWidth(), _object->getHeight());
+  centerInRect(rect);
+}
+
+void BasicScreenObject::centerInRect(ofRectangle targetRect) {
+  ofRectangle myRect = ofRectangle(getX(), getY(), getWidth(), getHeight());
+  myRect.alignTo(targetRect);
+  setPosition(myRect.x, myRect.y);
 }
 
 ofVec2f BasicScreenObject::getSize() {
