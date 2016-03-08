@@ -6,14 +6,14 @@ ShapeRect::ShapeRect() {
 
 void ShapeRect::_draw() {
   ofPushStyle();
+
   if (_isFilled) {
     ofFill();
   } else {
     ofNoFill();
   }
-  ofSetRectMode(mode);
-  ofFill();
 
+  ofSetRectMode(mode);
   ofDrawRectangle(0, 0, width, height);
 
   if (_isStroked) {
