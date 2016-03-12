@@ -51,6 +51,8 @@ void BasicButton::_draw() {
 }
 
 void BasicButton::_drawForPicking() {
+  if (!isEnabled) return;
+
   if (_isCircle)
     ofDrawCircle(0, 0, width, height);
   else
