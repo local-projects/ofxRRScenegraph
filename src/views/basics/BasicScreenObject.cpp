@@ -369,7 +369,7 @@ void BasicScreenObject::draw() {
 
     if (((Renderer*) getRoot())->isDrawDebug()) {
       ofNoFill();
-      ofSetColor(ofColor(255, 0.5f * 255));
+      ofSetColor(ofColor(255, 0.25f * 255));
       ofSetLineWidth(1);
       ofDrawRectangle(0, 0, width, height);
 
