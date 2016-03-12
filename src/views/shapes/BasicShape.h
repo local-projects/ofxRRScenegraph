@@ -50,6 +50,9 @@ public:
   virtual void setStrokeColor(ofColor _color) {
     _strokeColor = _color;
   };
+  virtual ofColor getStrokeColor() {
+    return _strokeColor;
+  };
 
   ofPath path;
 
