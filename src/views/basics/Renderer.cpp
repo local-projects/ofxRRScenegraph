@@ -17,11 +17,12 @@ Renderer::Renderer() {
 
   bTuioSetup = false;
   bColorPickerSetup = false;
+  bDrawDebug = false;
+  bSetSizeDuringSetup = true;
   isRenderer = true;
   _isAddedToRenderer = true;
   drawcursors = true;
   removePickingObjects = true;
-  bDrawDebug = false;
 
   idleEventFired = false;
   idleTimeout = 30000; // 30 seconds
@@ -38,7 +39,9 @@ void Renderer::resize() {
 }
 
 void Renderer::setup() {
-  BasicScreenObject::setSize(ofGetWidth(), ofGetHeight());
+  if (bSetSizeDuringSetup) {
+    BasicScreenObject::setSize(ofGetWidth(), ofGetHeight());
+  }
   camera.setupPerspective();
 
   ofAddListener(ofEvents().mousePressed, this, &Renderer::mousePressed);

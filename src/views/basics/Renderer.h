@@ -65,6 +65,10 @@ public:
     return bDrawDebug;
   };
 
+  void setSizeDuringSetup(bool _setSize) {
+    bSetSizeDuringSetup = _setSize;
+  };
+
   BasicScreenObject *getObjectAt(float _screenx, float _screeny);
   GLuint getNextPickingName(BasicInteractiveObject *_object);
   void removePickingObject(BasicInteractiveObject *_object);
@@ -130,6 +134,7 @@ protected:
   bool bTuioSetup;
   bool bColorPickerSetup;
   bool bDrawDebug;
+  bool bSetSizeDuringSetup;
 
   void setup();
   void _draw(){};
