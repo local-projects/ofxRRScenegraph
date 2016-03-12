@@ -49,6 +49,9 @@ public:
   void isUpdateRealImageSize(bool _isupdatereal) {
     isUpdateReal = _isupdatereal;
   };
+  void isScalingImage(bool _scale) {
+    isScaling = _scale;
+  };
 
   void setMaxSize(float _width, float _height);
   void updateSize();
@@ -79,6 +82,7 @@ private:
   bool changed;
 
   bool isUpdateReal;
+  bool isScaling;
   bool loaded;
   bool loadingAsync;
   bool pointerSetExternally;

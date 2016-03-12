@@ -4,6 +4,7 @@ Image::Image() {
   hasMaxSize = false;
   changed = false;
   isUpdateReal = false;
+  isScaling = true;
   img = new ofImage();
   tex = NULL;
   loaded = false;
@@ -49,14 +50,22 @@ void Image::_draw() {
   if (img->getWidth() > 0) {
     ofPushStyle();
     ofSetRectMode(mode);
-    img->draw(0, 0, width, height);
+    if (isScaling) {
+      img->draw(0, 0, width, height);
+    } else {
+      img->draw(0, 0);
+    }
     ofPopStyle();
   }
 
   if (tex && tex->getWidth() > 0) {
     ofPushStyle();
     ofSetRectMode(mode);
-    tex->draw(0, 0, width, height);
+    if (isScaling) {
+      tex->draw(0, 0, width, height);
+    } else {
+      tex->draw(0, 0);
+    }
     ofPopStyle();
   }
   /*
