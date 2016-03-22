@@ -112,7 +112,7 @@ public:
   virtual void removeElement(BasicScreenObject *_element);
   virtual void clearElements();
 
-  virtual void scrollToElement(int _elementNr, int _speed = 1000);
+  virtual void scrollToElement(int _elementNr, int _speed = 1000, int offset = 0);
   virtual void flashScrollbar();
 
   virtual int getActiveElement() {

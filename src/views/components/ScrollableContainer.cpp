@@ -91,7 +91,7 @@ void ScrollableContainer::flashScrollbar() {
   }
 }
 
-void ScrollableContainer::scrollToElement(int _elementNr, int _speed) {
+void ScrollableContainer::scrollToElement(int _elementNr, int _speed, int offset) {
 
   if (_elementNr >= elements.size())
     _elementNr = elements.size() - 1;
@@ -108,6 +108,10 @@ void ScrollableContainer::scrollToElement(int _elementNr, int _speed) {
     }
     pos += ePadding;
   }
+
+  // Allow passing in an offset in case you want to do something like scroll
+  // to the 3rd element, but have it be 30px from the top of the screen/scroller
+  pos -= offset;
 
   // If speed is 0 then we want to jump directly to the new element
   // Set the active element here *before* calling moveTo() so that no callbacks
