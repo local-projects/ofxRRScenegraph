@@ -332,10 +332,13 @@ int ScrollableContainer::_findActiveElement() {
         start += elements[i]->getWidth();
         start += ePadding;
         if (start >= -scrollContainer.getX()) {
-          if (scrollContainer.getDragSpeed().x < 0)
-            active = i + 1;
-          else
-            active = i;
+          // Commented out since I was getting weird values for a horizontal scroller
+          // Just return active + 1
+//          if (scrollContainer.getDragSpeed().x < 0)
+//            active = i + 1;
+//          else
+//            active = i;
+          active = i + 1;
           break;
         }
       } else {
