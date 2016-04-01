@@ -487,15 +487,14 @@ void ScrollableContainer::onContentsMoved(BasicScreenObjectEvent &event) {
     if (isSnappingToElement) return;
     if (!scrollContainer.isDraggable()) return;
 
-    float threshold = 50;
     float pos = horizontalMode ? scrollContainer.getX() : scrollContainer.getY();
     float delta = pos - dragStartPos;
     int newActiveElementNr = _activeElementNr;
 
-    if (delta > threshold) {
+    if (delta > scrollContainer.getDragThreshold()) {
       newActiveElementNr--;
       newActiveElementNr = MAX(newActiveElementNr, 0);
-    } else if (delta < -threshold) {
+    } else if (delta < -scrollContainer.getDragThreshold()) {
       newActiveElementNr++;
       newActiveElementNr = MIN(newActiveElementNr, elements.size() - 1);
     }
