@@ -100,6 +100,9 @@ public:
   virtual void setSnapToElementsTiming(float _time) {
     snapToElementsTime = _time;
   };
+  virtual void setEasingCurve(float (ofxTransitions::*curve)(float,float,float,float)) {
+    easingCurve = curve;
+  }
 
   virtual void forceLayoutUpdate() {
     _updateLayout();
@@ -190,4 +193,6 @@ protected:
   float defaultAppearTime;
   float defaultDisappearTime;
   float snapToElementsTime;
+
+  float (ofxTransitions::*easingCurve)(float,float,float,float);
 };

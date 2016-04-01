@@ -16,6 +16,7 @@ ScrollableContainer::ScrollableContainer() {
   defaultDisappearTime = 300;
   defaultAppearTime = 300;
   snapToElementsTime = 500;
+  easingCurve = &ofxTransitions::easeOutQuint;
 
   scrollContainer.setName("scrollContainer");
   scrollContainer.isDraggable(true);
@@ -121,9 +122,9 @@ void ScrollableContainer::scrollToElement(int _elementNr, int _speed, int offset
   }
 
   if (horizontalMode) {
-    scrollContainer.moveTo(-pos, scrollContainer.getY(), scrollContainer.getZ(), _speed, &ofxTransitions::easeOutQuint);
+    scrollContainer.moveTo(-pos, scrollContainer.getY(), scrollContainer.getZ(), _speed, easingCurve);
   } else {
-    scrollContainer.moveTo(scrollContainer.getX(), -pos, scrollContainer.getZ(), _speed, &ofxTransitions::easeOutQuint);
+    scrollContainer.moveTo(scrollContainer.getX(), -pos, scrollContainer.getZ(), _speed, easingCurve);
   }
 }
 
