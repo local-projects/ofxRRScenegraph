@@ -1024,9 +1024,9 @@ void BasicScreenObject::moveTo(float _endx, float _endy, float _endz, float _mov
   tweenEndX = _endx;
   tweenEndY = _endy;
   tweenEndZ = _endz;
-  Tweener.addTween(tweenx, _endx, _movetime / 1000.0, ease, delay / 1000.0);
-  Tweener.addTween(tweeny, _endy, _movetime / 1000.0, ease, delay / 1000.0);
-  Tweener.addTween(tweenz, _endz, _movetime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweenx, _endx, _movetime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweeny, _endy, _movetime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweenz, _endz, _movetime / 1000.0, ease, delay / 1000.0);
   isMoveTweening = true;
 }
 
@@ -1039,7 +1039,7 @@ void BasicScreenObject::fadeTo(float _endalpha, float _fadetime, float (ofxTrans
 void BasicScreenObject::fadeTo(float _endalpha, float _fadetime, float (ofxTransitions::*ease)(float, float, float, float), float delay) {
   visibletimer.stopTimer();
   tweenEndAlpha = _endalpha;
-  Tweener.addTween(alpha, _endalpha, _fadetime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, alpha, _endalpha, _fadetime / 1000.0, ease, delay / 1000.0);
   isFadeTweening = true;
   isFadeTweeningToInvisible = false;
 }
@@ -1052,7 +1052,7 @@ void BasicScreenObject::fadeToInvisible(float _fadetime, float (ofxTransitions::
 void BasicScreenObject::fadeToInvisible(float _fadetime, float (ofxTransitions::*ease)(float, float, float, float), float delay) {
   visibletimer.stopTimer();
   tweenEndAlpha = 0.0;
-  Tweener.addTween(alpha, tweenEndAlpha, _fadetime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, alpha, tweenEndAlpha, _fadetime / 1000.0, ease, delay / 1000.0);
   isFadeTweening = true;
   isFadeTweeningToInvisible = true;
 }
@@ -1081,9 +1081,9 @@ void BasicScreenObject::scaleTo(float _endxscale, float _endyscale, float _endzs
   tweenEndScaleX = _endxscale;
   tweenEndScaleY = _endyscale;
   tweenEndScaleZ = _endzscale;
-  Tweener.addTween(tweenscalex, _endxscale, _scaletime / 1000.0, ease, delay / 1000.0);
-  Tweener.addTween(tweenscaley, _endyscale, _scaletime / 1000.0, ease, delay / 1000.0);
-  Tweener.addTween(tweenscalez, _endzscale, _scaletime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweenscalex, _endxscale, _scaletime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweenscaley, _endyscale, _scaletime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweenscalez, _endzscale, _scaletime / 1000.0, ease, delay / 1000.0);
   isScaleTweening = true;
 }
 
@@ -1110,9 +1110,9 @@ void BasicScreenObject::colorTo(float _endr, float _endg, float _endb, float _co
   tweenEndR = _endr;
   tweenEndG = _endg;
   tweenEndB = _endb;
-  Tweener.addTween(tweenr, _endr, _colortime / 1000.0, ease, delay / 1000.0);
-  Tweener.addTween(tweeng, _endg, _colortime / 1000.0, ease, delay / 1000.0);
-  Tweener.addTween(tweenb, _endb, _colortime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweenr, _endr, _colortime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweeng, _endg, _colortime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweenb, _endb, _colortime / 1000.0, ease, delay / 1000.0);
   isColorTweening = true;
 }
 
@@ -1142,7 +1142,7 @@ void BasicScreenObject::rotateTo(ofQuaternion _quat, float _slerptime, float (of
   tweenrotslerp = 0.0;
   endquat = _quat;
   startquat = getOrientationQuat();
-  Tweener.addTween(tweenrotslerp, 1.0, _slerptime / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweenrotslerp, 1.0, _slerptime / 1000.0, ease, delay / 1000.0);
   isRotationTweening = true;
 }
 
@@ -1157,8 +1157,8 @@ void BasicScreenObject::sizeTo(float _width, float _height, float _time, float (
   tweenHeight = height;
   tweenEndWidth = _width;
   tweenEndHeight = _height;
-  Tweener.addTween(tweenWidth, _width, _time / 1000.0, ease, delay / 1000.0);
-  Tweener.addTween(tweenHeight, _height, _time / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweenWidth, _width, _time / 1000.0, ease, delay / 1000.0);
+  Tweener.addTween(this, tweenHeight, _height, _time / 1000.0, ease, delay / 1000.0);
   isSizeTweening = true;
 }
 

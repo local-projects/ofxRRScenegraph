@@ -205,7 +205,7 @@ void TextField::renderText() {
   }
 
   textImage.setFromPixels(layout->context->getSurface()->getPixels(), width, height + umlautoffset, OF_IMAGE_COLOR_ALPHA, true);
-
+    
   if (!changed)
     ofNotifyEvent(textRenderedEvent, myEventArgs, this);
 }
