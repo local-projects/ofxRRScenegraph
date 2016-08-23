@@ -33,6 +33,8 @@
 #define MASK_TYPE_SCISSOR 1
 #define MASK_TYPE_CLIPPLANES 2
 
+
+
 class BasicScreenObject : public ofNode {
 
 public:
@@ -63,13 +65,15 @@ public:
   // functions called by ofEvents
   void _draw(ofEventArgs &e);
   void _setup(ofEventArgs &e);
-  void _update(ofEventArgs &e);
+  void _update();
+//  void _update(ofEventArgs &e);
   void _exit(ofEventArgs &e);
 
   // Basic Setters and Getters
-  void setName(string _name) {
-    myname = _name;
-  };
+    void setName(string _name);
+//    {
+//    myname = _name;
+//  };
   string getName() {
     return myname;
   };
@@ -124,6 +128,7 @@ public:
   bool isAddedToRenderer();
   void isAddedToRenderer(bool _added);
   // void	setChildrenParentTreeVisibility();
+    int getNumChildren();
 
   void isOrderChildrenByZ(bool _isorderbyz);
   bool isOrderChildrenByZ();

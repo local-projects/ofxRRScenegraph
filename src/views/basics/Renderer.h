@@ -129,6 +129,8 @@ public:
 
   void forceUpdate();
   void forceInteraction();
+      void setup();
+      void update();
 
 protected:
   bool bTuioSetup;
@@ -136,9 +138,9 @@ protected:
   bool bDrawDebug;
   bool bSetSizeDuringSetup;
 
-  void setup();
+
   void _draw(){};
-  void update();
+
 
   // TUIO Controller functions
   ofxTuioClient tuio;

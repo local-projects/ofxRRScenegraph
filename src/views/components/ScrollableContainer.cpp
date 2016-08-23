@@ -1,3 +1,4 @@
+
 #include "ScrollableContainer.h"
 #include "ofxTransitions.h"
 
@@ -372,9 +373,11 @@ int ScrollableContainer::_findActiveElement() {
 }
 
 void ScrollableContainer::_handleActiveElementChange() {
-  BasicScreenObjectEvent event(elements[_activeElementNr]);
-  ofNotifyEvent(activeElementChangedEvent, event, this);
-  // ofLog(OF_LOG_NOTICE, ofToString(_activeElementNr));
+    if (elements.size() > 0) {
+      BasicScreenObjectEvent event(elements[_activeElementNr]);
+      ofNotifyEvent(activeElementChangedEvent, event, this);
+      // ofLog(OF_LOG_NOTICE, ofToString(_activeElementNr));
+    }
 }
 
 void ScrollableContainer::onManualScrollStop(MultiTouchEvent &_event) {

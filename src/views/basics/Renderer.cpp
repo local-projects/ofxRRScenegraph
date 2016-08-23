@@ -123,10 +123,12 @@ void Renderer::update() {
       ofNotifyEvent(idleEvent, myEventArgs, this);
     }
   }
+    
+    for (auto child : childlist) child->_update();
 }
 
 void Renderer::forceUpdate() {
-  update();
+   update();
 }
 
 void Renderer::draw() {

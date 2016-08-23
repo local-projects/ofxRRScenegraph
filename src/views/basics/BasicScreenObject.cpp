@@ -1,8 +1,11 @@
 #include "BasicScreenObject.h"
 #include "Renderer.h"
 
-BasicScreenObject::BasicScreenObject() {
+int totalObjects = 0;
+int namedObjectCount = 0;
 
+
+BasicScreenObject::BasicScreenObject() {
   masktype = MASK_TYPE_CLIPPLANES;
   ismask = false;
   hasmask = false;
@@ -73,24 +76,38 @@ BasicScreenObject::BasicScreenObject() {
 
   isRenderer = false;
 
-  ofAddListener(ofEvents().setup, this, &BasicScreenObject::_setup);
-  ofAddListener(ofEvents().update, this, &BasicScreenObject::_update);
-  ofAddListener(ofEvents().exit, this, &BasicScreenObject::_exit);
-  ofAddListener(killEvent, this, &BasicScreenObject::onKill);
-  ofAddListener(hideEvent, this, &BasicScreenObject::onHide);
-  ofAddListener(showEvent, this, &BasicScreenObject::onShow);
-  ofAddListener(Tweener.onTweenCompleteEvent, this, &BasicScreenObject::onTweenComplete);
+//  ofAddListener(ofEvents().setup, this, &BasicScreenObject::_setup);
+//  ofAddListener(ofEvents().update, this, &BasicScreenObject::_update);
+//  ofAddListener(ofEvents().exit, this, &BasicScreenObject::_exit);
+//  ofAddListener(killEvent, this, &BasicScreenObject::onKill);
+//  ofAddListener(hideEvent, this, &BasicScreenObject::onHide);
+//  ofAddListener(showEvent, this, &BasicScreenObject::onShow);
+//  ofAddListener(Tweener.onTweenCompleteEvent, this, &BasicScreenObject::onTweenComplete);
+    cout << "--- " << ++totalObjects << " objects ---" << endl;
 }
 
 BasicScreenObject::~BasicScreenObject() {
   childlist.clear();
-  ofRemoveListener(ofEvents().setup, this, &BasicScreenObject::_setup);
-  ofRemoveListener(ofEvents().update, this, &BasicScreenObject::_update);
-  ofRemoveListener(ofEvents().exit, this, &BasicScreenObject::_exit);
-  ofRemoveListener(killEvent, this, &BasicScreenObject::onKill);
-  ofRemoveListener(showEvent, this, &BasicScreenObject::onShow);
-  ofRemoveListener(hideEvent, this, &BasicScreenObject::onHide);
-  ofRemoveListener(Tweener.onTweenCompleteEvent, this, &BasicScreenObject::onTweenComplete);
+//  ofRemoveListener(ofEvents().setup, this, &BasicScreenObject::_setup);
+//  ofRemoveListener(ofEvents().update, this, &BasicScreenObject::_update);
+//  ofRemoveListener(ofEvents().exit, this, &BasicScreenObject::_exit);
+//  ofRemoveListener(killEvent, this, &BasicScreenObject::onKill);
+//  ofRemoveListener(showEvent, this, &BasicScreenObject::onShow);
+//  ofRemoveListener(hideEvent, this, &BasicScreenObject::onHide);
+//  ofRemoveListener(Tweener.onTweenCompleteEvent, this, &BasicScreenObject::onTweenComplete);
+    cout << "--- " << --totalObjects << " objects ---" << endl;
+}
+
+void BasicScreenObject::setName(string _name) {
+    myname = _name;
+};
+
+int BasicScreenObject::getNumChildren() {
+    int numChildren = childlist.size();
+    for (auto child : childlist) {
+        numChildren += child->getNumChildren();
+    }
+    return numChildren;
 }
 
 /********************************************************
@@ -154,7 +171,7 @@ void BasicScreenObject::_setup(ofEventArgs &e) {
   setup();
 }
 
-void BasicScreenObject::_update(ofEventArgs &e) {
+void BasicScreenObject::_update() {
   if (!isupdating)
     return;
   if (age == 1)
@@ -186,6 +203,8 @@ void BasicScreenObject::_update(ofEventArgs &e) {
 
   update();
 
+  
+    
   if (positioners.size() > 0) {
     for (positioner = positioners.begin(); positioner != positioners.end(); positioner++) {
       IPositioner *p = positioner->second;
@@ -194,6 +213,7 @@ void BasicScreenObject::_update(ofEventArgs &e) {
   }
 
   age++;
+    for (auto child : childlist) child->_update();
 }
 
 void BasicScreenObject::_exit(ofEventArgs &e) {
