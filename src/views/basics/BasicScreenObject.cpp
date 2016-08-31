@@ -83,7 +83,7 @@ BasicScreenObject::BasicScreenObject() {
 //  ofAddListener(hideEvent, this, &BasicScreenObject::onHide);
 //  ofAddListener(showEvent, this, &BasicScreenObject::onShow);
 //  ofAddListener(Tweener.onTweenCompleteEvent, this, &BasicScreenObject::onTweenComplete);
-    cout << "--- " << ++totalObjects << " objects ---" << endl;
+//    cout << "--- " << ++totalObjects << " objects ---" << endl;
 }
 
 BasicScreenObject::~BasicScreenObject() {
@@ -95,7 +95,7 @@ BasicScreenObject::~BasicScreenObject() {
 //  ofRemoveListener(showEvent, this, &BasicScreenObject::onShow);
 //  ofRemoveListener(hideEvent, this, &BasicScreenObject::onHide);
 //  ofRemoveListener(Tweener.onTweenCompleteEvent, this, &BasicScreenObject::onTweenComplete);
-    cout << "--- " << --totalObjects << " objects ---" << endl;
+//    cout << "--- " << --totalObjects << " objects ---" << endl;
 }
 
 void BasicScreenObject::setName(string _name) {
@@ -273,11 +273,12 @@ void BasicScreenObject::addChildAt(BasicScreenObject *_child, int _index) {
 void BasicScreenObject::removeChild(BasicScreenObject *_child) {
   for (int i = 0; i < childlist.size(); i++) {
     if (childlist[i] == _child) {
-      _child->clearParent();
+    _child->clearParent();
       childlist.erase(childlist.begin() + i);
       break;
     }
   }
+
 }
 
 void BasicScreenObject::removeChildren() {

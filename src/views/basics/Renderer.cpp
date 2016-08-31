@@ -238,7 +238,8 @@ void Renderer::notifyObjects(TouchAction _touchAction) {
   ray.screenpos.set(_touchAction.screenX, _touchAction.screenY);
 
   BasicInteractiveObject *overobj = (BasicInteractiveObject *)getObjectAt(_touchAction.screenX, _touchAction.screenY);
-
+//    ofLogNotice("Renderer", ofToString(pickingObjects.size()) + " pickingObjects.size()");
+    
   for (int i = 0; i < pickingObjects.size(); i++) {
     BasicInteractiveObject *obj = (BasicInteractiveObject *)pickingObjects[i];
     if (obj != NULL && obj != overobj) {
@@ -349,9 +350,22 @@ BasicScreenObject *Renderer::getObjectAt(float _screenx, float _screeny) {
 }
 
 GLuint Renderer::getNextPickingName(BasicInteractiveObject *_object) {
-  GLuint np = ++nextPickingName;
-  pickingObjects[np] = _object;
-  return np;
+    //is the object already in  pickingObjects?
+    GLuint np = -1;
+    for (int i = 0; i < pickingObjects.size(); i++) {
+        if (pickingObjects[i] == _object){
+            np = i;
+            break;
+        }
+    }
+  
+    //if not let's add it
+    if (np == -1) {
+        np = ++nextPickingName;
+        pickingObjects[np] = _object;
+    }
+    
+    return np;
 }
 
 void Renderer::removePickingObject(BasicInteractiveObject *_object) {
